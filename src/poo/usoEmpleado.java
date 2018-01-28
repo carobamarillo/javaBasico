@@ -37,6 +37,8 @@ public class usoEmpleado {
 		Jefatura jefaFinanzas = (Jefatura)misEmpleados[5];
 		jefaFinanzas.estableceIncentivo(55000);
 		
+		Arrays.sort(misEmpleados);
+		
 		for(Empleado empleado: misEmpleados) {
 			
 			empleado.subeSueldo(5);
@@ -50,7 +52,7 @@ public class usoEmpleado {
 
 }
 
-class Empleado {
+class Empleado implements Comparable{
 	//metodo constructor
 	
 	public Empleado(String nom, double sue, int agno, int mes, int dia) {
@@ -87,6 +89,20 @@ class Empleado {
 		double aumento = sueldo*porcentaje/100;
 		
 		sueldo+=aumento;
+	}
+	
+	public int compareTo(Object miObjeto) {
+		
+		Empleado otroEmpleado = (Empleado) miObjeto;
+		
+		if(this.sueldo<otroEmpleado.sueldo) {
+			
+			return -1;
+		}else {
+			return 1;
+		}
+		
+		
 	}
 	
 	private String nombre;
