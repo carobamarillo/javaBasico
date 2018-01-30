@@ -1,0 +1,16 @@
+package com.ejercicio4;
+
+public class Cafetera {
+	
+	private String capacidadMaxima;
+	private String capacidadActual;
+	
+	public Cafetera(){
+		
+		capacidadMaxima = 1000;
+		capacidadActual = 0;
+		
+	}
+	
+
+}

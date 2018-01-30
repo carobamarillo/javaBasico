@@ -1,0 +1,28 @@
+
+public class Persona {
+	
+	private String nombre;
+	private int edad;
+	private String dni;
+	private final String sexo = "M";
+	private int peso;
+	private int altura;
+	
+	public Persona(){
+		if (sexo)
+	}
+	
+	public Persona(String nom, String sexo, String dni){
+		
+		nombre = nom;
+		this.sexo = sexo;
+		this.dni = dni;	
+		
+	}
+	public Persona(String nom, int edad, String dni, String ) {
+		
+	}
+	
+	
+
+}

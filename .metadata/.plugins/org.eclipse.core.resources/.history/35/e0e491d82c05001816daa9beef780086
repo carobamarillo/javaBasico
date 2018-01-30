@@ -1,0 +1,30 @@
+package com.ejercicio4;
+
+public class Cafetera {
+	
+	private int capacidadMaxima;
+	private int capacidadActual;
+	
+	public Cafetera() {
+		
+		capacidadMaxima = 1000;
+		capacidadActual = 0;
+		
+	}
+	
+	
+	public int llenarCafetera(){
+		
+		return this.capacidadActual = this.capacidadMaxima; 
+				
+	}
+	
+	public void servirTaza(int servir){
+		
+		if (this.capacidadActual < servir){
+			
+			
+			
+		}
+	}
+}

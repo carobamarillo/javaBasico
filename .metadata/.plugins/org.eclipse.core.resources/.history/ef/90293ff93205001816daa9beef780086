@@ -1,0 +1,15 @@
+
+public class Persona {
+	
+	private String nombre;
+	private int edad;
+	private String dni;
+	private String sexo = "M";
+	private int peso;
+	private int altura;
+	
+	
+	
+	
+
+}
