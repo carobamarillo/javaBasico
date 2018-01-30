@@ -1,0 +1,10 @@
+package com.ejercicio6;
+
+public class Auto {
+	String marca, color;
+	
+	public Auto(String marca, String color){
+		this.marca =  marca;
+		this.color = color;
+	}
+}

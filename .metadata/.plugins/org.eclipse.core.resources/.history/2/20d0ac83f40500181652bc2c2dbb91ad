@@ -1,0 +1,33 @@
+package com.ejercicio7;
+
+import java.util.ArrayList;
+
+public class Cliente {
+	private String nombre;
+	private Banco banco;
+	private ArrayList<CuentaBancaria> listadeCuentasBancarias;
+	
+	public Cliente(String nombre, Banco banco){
+		this.nombre = nombre;
+		this.banco = banco;
+		
+		banco.getListadeClientes().add(this);
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public ArrayList<CuentaBancaria> getListadeCuentasBancarias() {
+		return listadeCuentasBancarias;
+	}
+
+	public void setListadeCuentasBancarias(ArrayList<CuentaBancaria> listadeCuentasBancarias) {
+		this.listadeCuentasBancarias = listadeCuentasBancarias;
+	}
+
+}

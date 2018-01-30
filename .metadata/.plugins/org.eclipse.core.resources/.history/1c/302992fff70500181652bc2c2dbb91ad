@@ -1,0 +1,12 @@
+package com.ejercicio7;
+
+public class TarjetaDeDebito {
+	
+	String vencimiento;
+	
+	public TarjetaDeDebito(){
+		vencimiento = "12/20";
+	}
+	
+
+}

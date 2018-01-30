@@ -1,0 +1,8 @@
+package com.ejercicioExtra;
+
+public class Empleado {
+	private String nombre;
+	private int sueldo;
+	
+	
+}

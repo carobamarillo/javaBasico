@@ -1,0 +1,12 @@
+package com.ejercicio7;
+
+public class CuentaBancaria {
+	String cliente;
+	String banco;
+	
+	public CuentaBancaria(String cliente, String banco){
+		
+		
+	}
+	
+}

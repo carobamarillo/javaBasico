@@ -1,0 +1,16 @@
+package com.ejercicio7;
+
+public class CuentaBancaria {
+	String nDeCuenta;
+	String banco;
+	Cliente cliente;
+	
+	public CuentaBancaria(String nDeCuenta, String banco, Cliente cliente){
+		this.nDeCuenta = nDeCuenta;
+		this.banco = banco;
+		this.cliente = cliente;
+		
+		cliente.getListadeCuentasBancarias().add(this);
+	}
+	
+}

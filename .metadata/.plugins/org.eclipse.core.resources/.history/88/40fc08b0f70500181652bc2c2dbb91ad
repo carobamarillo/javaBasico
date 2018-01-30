@@ -1,0 +1,12 @@
+package com.ejercicio7;
+
+public class TarjetaDeDebito {
+	
+	int numero;
+	
+	public TarjetaDeDebito(){
+		numero = 2546675641231;
+	}
+	
+
+}

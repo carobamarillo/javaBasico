@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.ejercicio5.Persona"/>
+<fullyQualifiedTypeName name="com.ejercicio6.Jugador"/>
+<fullyQualifiedTypeName name="com.ejercicio6.Auto"/>
+<fullyQualifiedTypeName name="com.ejercicio7.Cliente"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
