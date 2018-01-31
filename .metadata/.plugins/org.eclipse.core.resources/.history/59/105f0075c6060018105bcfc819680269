@@ -1,0 +1,23 @@
+package com.ejercicio15;
+
+public class Serie {
+
+	private String titulo, genero, creador;
+	private int numeroDeTemporadas;
+	private boolean entregado;
+	
+	public Serie() {
+	}
+	
+	public Serie(String titulo, String creador){
+		
+		this.titulo = titulo;
+		this.creador = creador;
+		this.genero = "";
+		this.numeroDeTemporadas = 3;
+		this.entregado = false;
+		
+	}
+	
+
+}

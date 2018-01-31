@@ -1,0 +1,9 @@
+package com.ejercicio15;
+
+public class Serie {
+
+	public Serie() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
