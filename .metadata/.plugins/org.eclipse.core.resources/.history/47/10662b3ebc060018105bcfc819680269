@@ -1,0 +1,13 @@
+package com.ejercicio14;
+
+public class Electrodomestico {
+	
+	private int precioBase;
+	private String color;
+	private char consumoEnergetico;
+	private double peso;
+	//Datos por defecto
+	private final String colorPorDefecto = "blanco";
+	private final char consumoEnergetico = 'F';
+	
+}

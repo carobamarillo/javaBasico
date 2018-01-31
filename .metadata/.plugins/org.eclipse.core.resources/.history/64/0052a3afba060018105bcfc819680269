@@ -1,0 +1,10 @@
+package com.ejercicio14;
+
+public class Electrodomestico {
+	
+	private int precioBase;
+	private String color;
+	private char consumoEnergetico;
+	
+
+}
