@@ -46,6 +46,19 @@ public class Electrodomestico {
 		return peso;
 	}
 	
+	public void comprobarconsumoEnergrtico(char letra){
+		switch (letra) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		
+	}
+	
 	public void comprobarColor(){
 		
 	}

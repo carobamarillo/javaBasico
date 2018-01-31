@@ -6,6 +6,7 @@ public class Electrodomestico {
 	private String color;
 	private char consumoEnergetico;
 	private double peso;
+	private enum consumoEnergetico{ A,B,C,D,E,F};
 	//private ArrayList<colores> listaDeColoresDiponibles;
 	//Datos por defecto
 	/*private final String colorPorDefecto = "blanco";
@@ -44,6 +45,19 @@ public class Electrodomestico {
 
 	public double getPeso() {
 		return peso;
+	}
+	
+	public void comprobarconsumoEnergrtico(char letra){
+		switch (letra) {
+		case value:
+			
+			break;
+
+		default:
+			break;
+		}
+		
+		
 	}
 	
 	public void comprobarColor(){
