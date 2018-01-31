@@ -1,0 +1,19 @@
+package com.ejercicio8;
+
+public class Perro extends Mascotas {
+	private int aumentoDeAlimento;
+	
+	public Perro(String nom, float edad, float peso, int aumentoDeAlimento) {
+		super(nom, edad, peso);
+		
+		
+	}
+
+	@Override
+	public String accion() {
+		return  "Me relaja ladrar!";
+	}
+	
+	
+	
+}

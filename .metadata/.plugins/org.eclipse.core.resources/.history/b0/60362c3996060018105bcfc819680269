@@ -1,0 +1,5 @@
+package com.ejercicio8;
+
+public class Perro extends Mascotas {
+	
+}
