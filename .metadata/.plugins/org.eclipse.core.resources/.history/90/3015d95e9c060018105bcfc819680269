@@ -1,0 +1,19 @@
+package com.ejercicio9;
+
+public class Piloto extends Persona {
+	
+	private String cargo;
+	
+	
+	public Piloto(String nombre, String apellido) {
+		super(nombre, apellido);
+		
+	}
+
+	@Override
+	public void premio() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.ejercicio9;
+
+public abstract class Persona {
+	private String nombre;
+	private String apellido;
+	
+}

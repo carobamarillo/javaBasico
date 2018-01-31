@@ -1,0 +1,10 @@
+package com.ejercicio9;
+
+public class Piloto extends Persona {
+
+	public Piloto(String nombre, String apellido) {
+		super(nombre, apellido);
+		
+	}
+
+}

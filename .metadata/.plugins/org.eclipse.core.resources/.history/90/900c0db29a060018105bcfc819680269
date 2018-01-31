@@ -1,0 +1,5 @@
+package com.ejercicio9;
+
+public abstract class Persona {
+
+}
