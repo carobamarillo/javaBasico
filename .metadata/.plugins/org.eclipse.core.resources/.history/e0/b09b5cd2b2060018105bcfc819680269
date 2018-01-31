@@ -1,0 +1,8 @@
+package com.ejercicio12;
+
+public class Auto {
+	
+	private int patente;
+	
+
+}

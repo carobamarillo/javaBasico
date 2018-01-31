@@ -1,0 +1,10 @@
+package com.ejercicio12;
+
+import java.util.ArrayList;
+
+public class Vehiculo {
+	
+	private ArrayList<Vehiculo> listaVehiculos;
+	
+
+}

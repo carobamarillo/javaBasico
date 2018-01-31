@@ -1,0 +1,9 @@
+package com.ejercicio13;
+
+public class Empleado extends Persona implements ICobrador {
+	private int salarioHora;
+	private int horasTrabajadas;
+	
+	
+	
+}
