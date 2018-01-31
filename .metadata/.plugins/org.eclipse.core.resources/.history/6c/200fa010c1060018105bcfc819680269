@@ -46,8 +46,7 @@ public class Electrodomestico {
 		return peso;
 	}
 	
-	public void comprobarconsumoEnergrtico(char letra){
-		
+	public void comprobarconsumoEnergrtico(){
 		
 	}
 	

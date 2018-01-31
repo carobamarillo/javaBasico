@@ -20,42 +20,8 @@ public class Electrodomestico {
 		this.peso = peso;
 		this.precioBase = precioBase;
 		this.color = "Blanco";
-		this.consumoEnergetico = 'F';		
-	}
-	
-	public Electrodomestico(int precioBase, String color, char consumoEnergetico, double peso) {
-		this.precioBase = precioBase;
-		this.color = color;
-		this.consumoEnergetico = consumoEnergetico;
-		this.peso = peso;
-	}
-
-	public int getPrecioBase() {
-		return precioBase;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public char getConsumoEnergetico() {
-		return consumoEnergetico;
-	}
-
-	public double getPeso() {
-		return peso;
-	}
-	
-	public void comprobarconsumoEnergrtico(char letra){
+		this.consumoEnergetico = "F";
 		
-		
-	}
-	
-	public void comprobarColor(){
-		
-	}
-	
-	public void precioFinal(){
 		
 	}
 	

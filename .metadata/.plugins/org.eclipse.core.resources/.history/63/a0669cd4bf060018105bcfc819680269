@@ -29,35 +29,7 @@ public class Electrodomestico {
 		this.consumoEnergetico = consumoEnergetico;
 		this.peso = peso;
 	}
-
-	public int getPrecioBase() {
-		return precioBase;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public char getConsumoEnergetico() {
-		return consumoEnergetico;
-	}
-
-	public double getPeso() {
-		return peso;
-	}
 	
-	public void comprobarconsumoEnergrtico(char letra){
-		
-		
-	}
-	
-	public void comprobarColor(){
-		
-	}
-	
-	public void precioFinal(){
-		
-	}
 	
 	
 	

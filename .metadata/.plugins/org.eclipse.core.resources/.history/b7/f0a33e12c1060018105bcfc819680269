@@ -48,7 +48,6 @@ public class Electrodomestico {
 	
 	public void comprobarconsumoEnergrtico(char letra){
 		
-		
 	}
 	
 	public void comprobarColor(){
