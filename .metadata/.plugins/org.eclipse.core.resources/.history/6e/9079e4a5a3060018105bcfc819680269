@@ -1,0 +1,18 @@
+package com.ejercicio10;
+
+public class Circulo extends Forma{
+	public int radio;
+
+	@Override
+	public void CalcularArea() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void CalcularPerimetro() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

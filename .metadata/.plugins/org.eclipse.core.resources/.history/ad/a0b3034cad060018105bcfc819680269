@@ -1,0 +1,17 @@
+package com.ejercicio11;
+
+public class Orden {
+	private int numero;
+	private String fecha, modeloPC,problema;
+	Empresa empresa;
+	
+	public Orden(int numero, String fecha, String modeloPC, String problema) {
+		this.numero = numero;
+		this.fecha = fecha;
+		this.modeloPC = modeloPC;
+		this.problema = problema;
+		
+		empresa.getRepuestos().add(this.numero);
+	}
+	
+}

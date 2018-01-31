@@ -1,0 +1,7 @@
+package com.ejercicio11;
+
+public class Repuesto {
+	private String nombre;
+	private int codigo;
+
+}

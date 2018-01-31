@@ -1,0 +1,17 @@
+package com.ejercicio11;
+
+public class Repuesto {
+	private String nombre;
+	private int codigo;
+	Empresa empresa;
+	
+	
+	public Repuesto(String nombre, int codigo) {
+		this.nombre = nombre;
+		this.codigo = codigo;
+		
+		empresa.getRepuestos().add(this.numero);
+		
+	}
+
+}

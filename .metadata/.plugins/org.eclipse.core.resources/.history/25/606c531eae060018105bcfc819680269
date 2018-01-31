@@ -1,0 +1,12 @@
+package com.ejercicio11;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Empresa empresa = new Empresa(" ");
+		Repuesto repuesto = new Repuesto("cooler", 345)
+
+	}
+
+}
