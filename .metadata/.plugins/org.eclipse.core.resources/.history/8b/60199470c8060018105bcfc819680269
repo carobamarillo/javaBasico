@@ -1,0 +1,14 @@
+package com.ejercicio15;
+
+public class Videojuego {
+	
+	private String titulo;
+	private int horasEstimadas;
+	private boolean entregado;
+	
+	
+	public Videojuego() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

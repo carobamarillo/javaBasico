@@ -1,0 +1,9 @@
+package com.ejercicio15;
+
+public class Videojuego {
+
+	public Videojuego() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

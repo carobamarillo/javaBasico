@@ -1,0 +1,5 @@
+package com.ejercicio15;
+
+public interface IEntregable {
+
+}

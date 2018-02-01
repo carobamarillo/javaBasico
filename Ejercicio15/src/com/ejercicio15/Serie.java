@@ -1,6 +1,6 @@
 package com.ejercicio15;
 
-public class Serie {
+public class Serie implements IEntregable {
 
 	private String titulo, genero, creador;
 	private int numeroDeTemporadas;
@@ -57,4 +57,31 @@ public class Serie {
 	public void setNumeroDeTemporadas(int numeroDeTemporadas) {
 		this.numeroDeTemporadas = numeroDeTemporadas;
 	}
+
+    public boolean isEntregado() {
+        if(entregado){
+            return true;
+        }
+        return false;
+    }
+  
+    @Override
+    public String toString(){
+        return "Informacion de la Serie: n" +
+                "tTitulo: "+titulo+"n" +
+                "tNumero de temporadas: "+numeroDeTemporadas+"n" +
+                "tGenero: "+genero+"n" +
+                "tCreador: "+creador;
+    }
+  
+	@Override
+	public void entregar() {
+		
+		entregado = true;
+		
+	}
+	@Override
+	 public void devolver() {
+	        entregado=false;
+	    }
 }

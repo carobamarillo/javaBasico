@@ -4,6 +4,18 @@
 <fullyQualifiedTypeName name="com.ejercicio6.Jugador"/>
 <fullyQualifiedTypeName name="com.ejercicio6.Auto"/>
 <fullyQualifiedTypeName name="com.ejercicio7.Cliente"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.ejercicio8.Mascotas"/>
+<fullyQualifiedTypeName name="com.ejercicio8.Perro"/>
+<fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
+<fullyQualifiedTypeName name="com.ejercicio9.Persona"/>
+<fullyQualifiedTypeName name="com.ejercicio10.Forma"/>
+<fullyQualifiedTypeName name="com.ejercicio11.Orden"/>
+<fullyQualifiedTypeName name="com.ejercicio11.Repuesto"/>
+<fullyQualifiedTypeName name="com.ejercicio13.Persona"/>
+<fullyQualifiedTypeName name="com.ejercicio13.ICobrador"/>
+<fullyQualifiedTypeName name="com.ejercicio13.Empleado"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ejercicio14.Electrodomestico.consumoEnergetico"/>
+<fullyQualifiedTypeName name="com.ejercicio14.Electrodomestico"/>
 </qualifiedTypeNameHistroy>

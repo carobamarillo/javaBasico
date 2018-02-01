@@ -1,0 +1,13 @@
+package com.ejercicio15;
+
+public class Videojuego {
+	
+	private String titulo, genero, compania;
+	private int horasEstimadas;
+	private boolean entregado;
+	
+	
+	public Videojuego() {
+	}
+
+}
