@@ -13,24 +13,26 @@ public class Cliente {
 
 	}
 
+
 	@Override
 	public String toString() {
-		return this.nombre + " " + this.apellido;
+		return this._nombre + " " + this._apellido;
 	}
 
 	public IFactura getCategoria() {
-		return this.categoria;
+		return this._categoria;
 	}
 
 	public double getDeuda() {
-		return this.deuda;
+		return this._deuda;
 	}
 
 	public void comprar(double gasto) {
-		this.deuda += gasto;
+		this._deuda += gasto;
 	}
+
 	public void pagarDeuda() {
-		System.out.println("El cliente " + this.toString() + "ha cancelado su deuda de $" + this.deuda);
-		this.deuda = 0;
+		System.out.println("El cliente " + this.toString() + "ha cancelado su deuda de $" + this._deuda);
+		this._deuda = 0;
 	}
 }

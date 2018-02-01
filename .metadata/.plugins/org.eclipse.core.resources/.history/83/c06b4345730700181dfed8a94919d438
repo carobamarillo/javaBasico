@@ -7,7 +7,7 @@ public class Empresa {
 	private String nombre;
 	private ArrayList<Cliente> listaClientes;
 	private ArrayList<Producto> listaDeStock;
-	private final double limiteDeuda = 4000;
+	private final double limiteDeuda = 10000;
 	private Proveedor provedor;
 	private int materiaDisponible;
 
@@ -19,6 +19,7 @@ public class Empresa {
 		this.materiaDisponible = 0;
 	}
 
+	// si el cliente no existe se debera ingresar antes de comprar
 	public Cliente nuevoCliente(String nombre, String apellido, Boolean responsable) {
 		Cliente clienteNuevo = new Cliente(nombre, apellido, responsable);
 		listaClientes.add(clienteNuevo);

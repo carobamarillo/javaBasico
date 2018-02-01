@@ -5,28 +5,29 @@ import java.util.ArrayList;
 public class Empresa {
 
 	private String nombre;
-	private ArrayList<Cliente> listaClientes;
-	private ArrayList<Producto> listaDeStock;
-	private final double limiteDeuda = 4000;
+	private ArrayList<Cliente> _clientes;
+	private ArrayList<Producto> _stock;
+	private final double limiteDeuda = 10000;
 	private Proveedor provedor;
 	private int materiaDisponible;
 
 	public Empresa(String nombre, Proveedor prov) {
 		this.nombre = nombre;
-		this.listaClientes = new ArrayList<>();
-		this.listaDeStock = new ArrayList<>();
+		this._clientes = new ArrayList<>();
+		this._stock = new ArrayList<>();
 		this.provedor = prov;
 		this.materiaDisponible = 0;
 	}
 
+	// si el cliente no existe se debera ingresar antes de comprar
 	public Cliente nuevoCliente(String nombre, String apellido, Boolean responsable) {
 		Cliente clienteNuevo = new Cliente(nombre, apellido, responsable);
-		listaClientes.add(clienteNuevo);
+		_clientes.add(clienteNuevo);
 		return clienteNuevo;
 	}
 
 	private Boolean comprobarCliente(Cliente unCliente) {
-		if (!this.listaClientes.contains(unCliente)) {
+		if (!this._clientes.contains(unCliente)) {
 			System.out.println("El ciente " + unCliente.toString() + " no existe ingreselo por favor");
 			return false;
 		}
@@ -38,7 +39,7 @@ public class Empresa {
 	}
 
 	private Boolean comprobarPorducto(Producto unProducto) {
-		if (!this.listaDeStock.contains(unProducto)) {
+		if (!this._stock.contains(unProducto)) {
 			System.out.println("El producto solicitado no existe ingreselo por favor");
 			return false;
 		}
@@ -50,15 +51,15 @@ public class Empresa {
 	}
 
 	public void agregarProductoNuevo(Producto unProducto) {
-		if (listaDeStock.contains(unProducto)) {
+		if (_stock.contains(unProducto)) {
 			System.out.println("El producto ya fue ingresado, si es de manufactura utilice agregar stock");
 		} else {
-			listaDeStock.add(unProducto);
+			_stock.add(unProducto);
 		}
 	}
 
 	public void agregarStock(Producto unProducto, int cantidad) {
-		if (listaDeStock.contains(unProducto)) {
+		if (_stock.contains(unProducto)) {
 			this.materiaDisponible = unProducto.sumarStock(cantidad, this.materiaDisponible);
 		}
 	}
@@ -123,14 +124,6 @@ public class Empresa {
 
 	public void cobrar(Cliente unCliente) {
 		unCliente.pagarDeuda();
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
 	}
 
 }

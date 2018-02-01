@@ -29,6 +29,7 @@ public class Cliente {
 	public void comprar(double gasto) {
 		this.deuda += gasto;
 	}
+
 	public void pagarDeuda() {
 		System.out.println("El cliente " + this.toString() + "ha cancelado su deuda de $" + this.deuda);
 		this.deuda = 0;

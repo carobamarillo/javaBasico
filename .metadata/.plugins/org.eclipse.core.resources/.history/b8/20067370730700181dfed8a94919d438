@@ -19,6 +19,7 @@ public class Empresa {
 		this.materiaDisponible = 0;
 	}
 
+	// si el cliente no existe se debera ingresar antes de comprar
 	public Cliente nuevoCliente(String nombre, String apellido, Boolean responsable) {
 		Cliente clienteNuevo = new Cliente(nombre, apellido, responsable);
 		listaClientes.add(clienteNuevo);

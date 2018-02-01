@@ -6,19 +6,20 @@ public class Empresa {
 
 	private String nombre;
 	private ArrayList<Cliente> listaClientes;
-	private ArrayList<Producto> listaDeStock;
-	private final double limiteDeuda = 4000;
+	private ArrayList<Producto> _stock;
+	private final double limiteDeuda = 10000;
 	private Proveedor provedor;
 	private int materiaDisponible;
 
 	public Empresa(String nombre, Proveedor prov) {
 		this.nombre = nombre;
 		this.listaClientes = new ArrayList<>();
-		this.listaDeStock = new ArrayList<>();
+		this._stock = new ArrayList<>();
 		this.provedor = prov;
 		this.materiaDisponible = 0;
 	}
 
+	// si el cliente no existe se debera ingresar antes de comprar
 	public Cliente nuevoCliente(String nombre, String apellido, Boolean responsable) {
 		Cliente clienteNuevo = new Cliente(nombre, apellido, responsable);
 		listaClientes.add(clienteNuevo);
@@ -38,7 +39,7 @@ public class Empresa {
 	}
 
 	private Boolean comprobarPorducto(Producto unProducto) {
-		if (!this.listaDeStock.contains(unProducto)) {
+		if (!this._stock.contains(unProducto)) {
 			System.out.println("El producto solicitado no existe ingreselo por favor");
 			return false;
 		}
@@ -50,15 +51,15 @@ public class Empresa {
 	}
 
 	public void agregarProductoNuevo(Producto unProducto) {
-		if (listaDeStock.contains(unProducto)) {
+		if (_stock.contains(unProducto)) {
 			System.out.println("El producto ya fue ingresado, si es de manufactura utilice agregar stock");
 		} else {
-			listaDeStock.add(unProducto);
+			_stock.add(unProducto);
 		}
 	}
 
 	public void agregarStock(Producto unProducto, int cantidad) {
-		if (listaDeStock.contains(unProducto)) {
+		if (_stock.contains(unProducto)) {
 			this.materiaDisponible = unProducto.sumarStock(cantidad, this.materiaDisponible);
 		}
 	}
