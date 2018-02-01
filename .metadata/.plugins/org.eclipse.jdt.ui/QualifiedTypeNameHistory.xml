@@ -15,7 +15,10 @@
 <fullyQualifiedTypeName name="com.ejercicio13.Persona"/>
 <fullyQualifiedTypeName name="com.ejercicio13.ICobrador"/>
 <fullyQualifiedTypeName name="com.ejercicio13.Empleado"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.ejercicio14.Electrodomestico.consumoEnergetico"/>
 <fullyQualifiedTypeName name="com.ejercicio14.Electrodomestico"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.ejercicio16.Libro"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

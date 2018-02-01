@@ -1,0 +1,13 @@
+package com.ejercicio18;
+
+import java.util.ArrayList;
+
+public class Empresa {
+	
+	private String nombre;
+	private ArrayList<cliente> listaDeClientes;
+	private ArrayList<producto> stockDeProductos;
+	private double deudaClienteMaximo = 4000;
+	
+
+}
