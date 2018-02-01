@@ -15,7 +15,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return this.nombre +"\n"+ this.apellido;
+		return this.nombre + " " + this.apellido;
 	}
 
 	public IFactura getCategoria() {
@@ -30,8 +30,7 @@ public class Cliente {
 		this.deuda += gasto;
 	}
 	public void pagarDeuda() {
-		System.out.println("El cliente " + this.toString() + 
-				"ha pagado su deuda de $" + this.deuda);
+		System.out.println("El cliente " + this.toString() + "ha cancelado su deuda de $" + this.deuda);
 		this.deuda = 0;
 	}
 }

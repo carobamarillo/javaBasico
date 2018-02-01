@@ -20,40 +20,40 @@ public class Empresa {
 	}
 
 	public Cliente nuevoCliente(String nombre, String apellido, Boolean responsable) {
-		Cliente cliente1 = new Cliente(nombre, apellido, responsable);
-		listaClientes.add(cliente1);
-		return cliente1;
+		Cliente clienteNuevo = new Cliente(nombre, apellido, responsable);
+		listaClientes.add(clienteNuevo);
+		return clienteNuevo;
 	}
 
-	private Boolean comprobarCliente(Cliente cliente) {
-		if (!this.listaClientes.contains(cliente)) {
-			System.out.println("El ciente " + cliente.toString() + " no existe ");
+	private Boolean comprobarCliente(Cliente unCliente) {
+		if (!this.listaClientes.contains(unCliente)) {
+			System.out.println("El ciente " + unCliente.toString() + " no existe ingreselo por favor");
 			return false;
 		}
-		if (this.puedeComprar(cliente)) {
-			System.out.println("El ciente " + cliente.toString() + " supera la deuda permitida y no puede comprar");
+		if (this.puedeComprar(unCliente)) {
+			System.out.println("El ciente " + unCliente.toString() + " supera la deuda permitida y no puede comprar");
 			return false;
 		}
 		return true;
 	}
 
-	private Boolean comprobarPorducto(Producto producto) {
-		if (!this.listaDeStock.contains(producto)) {
+	private Boolean comprobarPorducto(Producto unProducto) {
+		if (!this.listaDeStock.contains(unProducto)) {
 			System.out.println("El producto solicitado no existe ingreselo por favor");
 			return false;
 		}
-		if (producto.getStock() == 0) {
-			System.out.println("No hay existencias de " + producto.toString());
+		if (unProducto.getStock() == 0) {
+			System.out.println("No hay existencias de " + unProducto.toString());
 			return false;
 		}
 		return true;
 	}
 
-	public void agregarProductoNuevo(Producto producto) {
-		if (listaDeStock.contains(producto)) {
+	public void agregarProductoNuevo(Producto unProducto) {
+		if (listaDeStock.contains(unProducto)) {
 			System.out.println("El producto ya fue ingresado, si es de manufactura utilice agregar stock");
 		} else {
-			listaDeStock.add(producto);
+			listaDeStock.add(unProducto);
 		}
 	}
 

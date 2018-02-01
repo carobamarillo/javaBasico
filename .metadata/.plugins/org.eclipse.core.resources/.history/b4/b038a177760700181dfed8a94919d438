@@ -49,11 +49,11 @@ public class Empresa {
 		return true;
 	}
 
-	public void agregarProductoNuevo(Producto producto) {
-		if (listaDeStock.contains(producto)) {
+	public void agregarProductoNuevo(Producto unProducto) {
+		if (listaDeStock.contains(unProducto)) {
 			System.out.println("El producto ya fue ingresado, si es de manufactura utilice agregar stock");
 		} else {
-			listaDeStock.add(producto);
+			listaDeStock.add(unProducto);
 		}
 	}
 

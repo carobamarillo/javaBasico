@@ -15,7 +15,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return this.nombre +"\n"+ this.apellido;
+		return this.nombre + " " + this.apellido;
 	}
 
 	public IFactura getCategoria() {
