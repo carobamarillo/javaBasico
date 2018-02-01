@@ -7,7 +7,7 @@ public class Program {
 		        Electrodomestico listaElectrodomesticos[]=new Electrodomestico[3];
 		   
 		        //Asignamos cada una de las posiciones como queramos
-		        listaElectrodomesticos[0]=new Electrodomestico(300, 50, 'A', "Naranja");
+		        listaElectrodomesticos[0]=new Electrodomestico(300, "Naranja", 'A', 50);
 		        listaElectrodomesticos[1]=new Lavadora(200, 30);
 		        listaElectrodomesticos[2]=new Television(500, 80, 'C', "Negro", 30, false);
 		        double sumaElectrodomesticos=0;

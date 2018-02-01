@@ -1,0 +1,10 @@
+package com.ejercicio16;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Libro libro1 = new Libro(1234,555, "Un mundo feliz","Huxley","ljjk");
+
+	}
+
+}

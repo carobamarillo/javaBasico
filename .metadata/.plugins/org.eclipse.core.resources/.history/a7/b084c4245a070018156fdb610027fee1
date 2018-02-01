@@ -1,0 +1,9 @@
+package com.ejercicio17;
+
+public class Password {
+	
+	public int longitud;
+	public String contraseña;
+	public int final longitudPorDefecto = 8;
+	
+}
