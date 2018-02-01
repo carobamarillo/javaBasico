@@ -6,12 +6,13 @@ public class Electrodomestico {
 	private String color;
 	private char consumoEnergetico;
 	private double peso;
-	//private ArrayList<colores> listaDeColoresDiponibles;
+	private String colores[]={"blanco", "negro", "rojo", "azul", "gris"};
+	private boolean colorCorrecto=false;
 	//Datos por defecto
-	/*private final String colorPorDefecto = "blanco";
+	private final String colorPorDefecto = "blanco";
 	private final char consumoEnergeticoPorDefecto = 'F';
 	private int precioBasePorBase = 100;
-	private final double pesoPorDefecto = 5;*/
+	private final double pesoPorDefecto = 5;
 	//Constructor por defecto --->
 	public Electrodomestico(){}
 	
@@ -47,12 +48,67 @@ public class Electrodomestico {
 	}
 	
 	public void comprobarColor(){
-		
+  
+        for(int i=0;i<this.colores.length && !colorCorrecto;i++){
+              
+            if(colores[i].equals(color)){
+                colorCorrecto=true;
+            }
+              
+        }
+          
+        if(colorCorrecto){
+            this.color=color;
+        }else{
+            this.color=colorPorDefecto;
+        }
+          
 	}
 	
-	public void precioFinal(){
-		
-	}
+	 public double precioFinal(){
+        double plusConsumo=0;
+        switch(consumoEnergetico){
+            case 'A':
+                plusConsumo+=100;
+                break;
+            case 'B':
+                plusConsumo+=80;
+                break;
+            case 'C':
+                plusConsumo+=60;
+                break;
+            case 'D':
+                plusConsumo+=50;
+                break;
+            case 'E':
+                plusConsumo+=30;
+                break;
+            case 'F':
+                plusConsumo+=10;
+                break;
+        }
+   
+        if(peso>=0 && peso<19){
+            plusConsumo+=10;
+        }else if(peso>=20 && peso<49){
+            plusConsumo+=50;
+        }else if(peso>=50 && peso<=79){
+            plusConsumo+=80;
+        }else if(peso>=80){
+            plusConsumo+=100;
+        }
+   
+        return precioBase+plusConsumo;
+    }
+	 public void comprobarConsumoEnergetico(char consumoEnergetico){
+          
+        if(consumoEnergetico>=65 && consumoEnergetico<=70){
+            this.consumoEnergetico=consumoEnergetico;
+        }else{
+            this.consumoEnergetico=consumoEnergeticoPorDefecto;
+        }
+          
+    }
 	
 	
 	
