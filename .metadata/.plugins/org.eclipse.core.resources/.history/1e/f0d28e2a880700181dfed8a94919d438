@@ -1,0 +1,9 @@
+package com.ejercicioExtra;
+
+public class ProgramaOperario {
+	public static void main(String[] ar) {
+        
+    	Operarios operario=new Operarios();
+        operario.listaSueldoOperarios();
+    }
+}

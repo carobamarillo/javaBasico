@@ -1,0 +1,21 @@
+package com.ejercicioExtra;
+
+public class Operarios {
+	
+	public int[] sueldos;
+	
+	sueldos = new int[];
+	
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

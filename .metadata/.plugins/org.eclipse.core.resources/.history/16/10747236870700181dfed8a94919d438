@@ -1,0 +1,26 @@
+package com.ejercicioExtra;
+
+public class Operarios {
+	
+	public Operarios()
+    {
+        teclado=new Scanner(System.in);
+        sueldos=new int[5];
+        for(int f=0;f<5;f++) {
+            System.out.print("Ingrese valor de la componente:");
+            sueldos[f]=teclado.nextInt();
+        }	
+    }
+	
+    public void imprimir() {
+        for(int f=0;f<5;f++) {
+            System.out.println(sueldos[f]);
+        }
+    }
+	
+    public static void main(String[] ar) {
+        Operarios op=new Operarios();
+        op.imprimir();
+    }
+
+}
