@@ -1,0 +1,25 @@
+package com.ejercicioExtra;
+
+import java.util.Scanner;
+
+public class Persona {
+	public String nombre;
+	public int edad;
+	
+	
+	Scanner scanner = new Scanner(System.in);
+
+
+	public Persona(String nombre, int edad, Scanner scanner) {
+		this.nombre = nombre;
+		this.edad = edad;
+		this.scanner = scanner;
+	}
+
+
+	
+	
+	
+	
+
+}

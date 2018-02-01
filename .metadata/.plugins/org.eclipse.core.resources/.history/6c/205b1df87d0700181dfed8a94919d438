@@ -1,0 +1,8 @@
+package com.ejercicioExtra;
+
+public class Persona {
+	public String nombre;
+	public int edad;
+	Scanner scanner = new Scanner(System.in);
+
+}

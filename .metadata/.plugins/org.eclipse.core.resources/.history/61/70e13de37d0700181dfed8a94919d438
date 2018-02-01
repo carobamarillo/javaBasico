@@ -1,0 +1,7 @@
+package com.ejercicioExtra;
+
+public class Persona {
+	public String nombre;
+	
+
+}
