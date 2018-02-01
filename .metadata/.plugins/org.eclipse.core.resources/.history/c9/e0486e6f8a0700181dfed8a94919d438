@@ -1,0 +1,10 @@
+package com.ejercicio22;
+
+public class PersonaProgram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

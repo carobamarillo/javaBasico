@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/EjerciciosExtra/src/com/ejercicioExtra/ProgramaOperarios.java"/>
+<listEntry value="/Ejercicio21/src/com/ejercicio21/ProgramaOperarios.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ejercicioExtra.ProgramaOperarios"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="EjerciciosExtra"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ejercicio21.ProgramaOperarios"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Ejercicio21"/>
 </launchConfiguration>
