@@ -1,0 +1,17 @@
+package com.ejercicio23;
+
+import java.util.Scanner;
+
+public class programAlumno {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		Alumno alumno1;
+		
+		System.out.println("Ingrese nombre alumno: ");
+		alumno1.setNombre(scanner.nextLine());
+		
+	}
+
+}
