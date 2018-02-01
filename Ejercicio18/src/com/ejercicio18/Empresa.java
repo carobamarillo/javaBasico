@@ -68,7 +68,7 @@ public class Empresa {
 		double total = 0;
 		total = prod.getPrecio();
 		prod.descontarStock();
-		cli.comprar(total * (1 + ITipoFacturacion.iva));
+		cli.comprar(total * (1 + IFactura.iva));
 		return total;
 
 	}
@@ -112,7 +112,6 @@ public class Empresa {
 		if (pFinal > 0) {
 			this.facturarVenta(cli, 1, prod);
 		}
-
 	}
 
 	public void adquirirMateriales(int cantidad) {
