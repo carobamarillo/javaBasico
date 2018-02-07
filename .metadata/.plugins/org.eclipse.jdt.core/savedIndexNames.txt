@@ -70,7 +70,6 @@ INDEX VERSION 1.127+/home/alumno/Caro/.metadata/.plugins/org.eclipse.jdt.core
 94614538.index
 1923384476.index
 641595145.index
-2724494288.index
 2223424347.index
 2561060546.index
 1976123525.index
