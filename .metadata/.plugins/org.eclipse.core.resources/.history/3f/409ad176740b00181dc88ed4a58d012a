@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Página Principal</h1>
+    
+    <p th:text = "'Nombre: ' + ${book.getName()}  
+    + ${book.getBookDetails().getAutor()}"></p>
+	<a class="btn btn-danger" th:href="@{/Eliminar(id=${book.id})}"> delete </a>
+  </body>
+</html>

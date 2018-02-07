@@ -1,6 +1,0 @@
-package com.ejercicio8;
-
-public abstract class Mascotas {
-	String nombre;
-	float edad, peso;
-}

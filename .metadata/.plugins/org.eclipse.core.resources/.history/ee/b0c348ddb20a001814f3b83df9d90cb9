@@ -1,0 +1,9 @@
+package com.Ejercicio2.Formulario2.Model;
+
+public class Libro {
+	
+	private String titulo,autor,Editorial;
+	private int Anio;
+	
+
+}

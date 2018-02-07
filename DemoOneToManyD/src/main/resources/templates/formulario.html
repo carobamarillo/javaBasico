@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    
+    <form th:action="formulario" method="post">
+    <label>Alumno</label>
+    <br/>
+      <label>Nombre</label>
+      <input type = "text" th:field = "${alumno.nombreAlumno}"/>
+      
+      <label>Apellido</label>
+      <input type = "text" th:field = "${alumno.apellido}"/>
+      
+      <label>DNI</label>
+      <input type = "number" th:field = "${alumno.dni}"/>
+      
+      <label>Sede</label>
+
+	  <!-- EN EL FIELD SELECCIONO CUAL VA A SER EL ATRIBUTO AL QUE SE LE VA A ASIGNAR LA SELECCIION
+	  EN EL VALUE VA EL ID DEL OBJETO (ES EL DATO QUE NECESITO UTILIZAR), Y EN EL TEXT
+	  VA EL DATO QUE QUIERO QUE SE VISUALICE -->
+	  <select th:field = "${alumno.sede}">
+	  	<option th:each = "s : ${sedes}"
+	  	th:value = "${s.getIdSede()}"
+	  	th:text = "${s.getNombreSede()}">
+	  	</option>
+	  </select>
+      <br/>
+      <br/>
+      <input type="submit" name="btn" value="Tuqui"/>
+    </form>
+  </body>
+</html>

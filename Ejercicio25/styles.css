@@ -1,0 +1,34 @@
+body{
+  background-color: rgba(74, 74, 74, 0.98);
+  color: rgb(70, 130, 180);
+  font-family: monospace;
+}
+
+.descripcion {
+  text-align: center;
+  margin: auto;
+  width: 50em;
+  padding-top: 12em;
+}
+
+table{
+  margin: auto;
+  text-align: center;
+  padding-top: 6em;
+  border-spacing: 1em;
+  font-size: 1.5em;
+}
+th {
+  padding: 1em;
+  width: 8em;
+  background-color: rgba(29, 31, 31, 0.64);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(97, 92, 92, 0.58);
+  height: 2px;
+}
+
+td {
+  height: 2em;
+}

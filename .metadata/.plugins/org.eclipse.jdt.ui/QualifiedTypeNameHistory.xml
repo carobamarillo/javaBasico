@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="com.ejercicio6.Jugador"/>
 <fullyQualifiedTypeName name="com.ejercicio6.Auto"/>
 <fullyQualifiedTypeName name="com.ejercicio7.Cliente"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.ejercicio8.Mascotas"/>
 <fullyQualifiedTypeName name="com.ejercicio8.Perro"/>
 <fullyQualifiedTypeName name="java.lang.AbstractMethodError"/>
@@ -19,6 +18,27 @@
 <fullyQualifiedTypeName name="com.ejercicio14.Electrodomestico"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="com.ejercicio16.Libro"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="com.ejercicioExtra.Persona"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="com.ejercicio22.Persona"/>
+<fullyQualifiedTypeName name="com.ejercicio23.Alumno"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.Ejercicio1.Formulario.Model.Empleado"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="com.Ejercicio2.Formulario2.Model.Libro"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="com.OneToOne.OneToOneEj.Model.DaoBook"/>
+<fullyQualifiedTypeName name="com.OneToOne.OneToOneEj.Model.DaoBookDetails"/>
+<fullyQualifiedTypeName name="com.OneToOne.OneToOneEj.Model.BookDetails"/>
+<fullyQualifiedTypeName name="com.OneToOne.OneToOneEj.Model.Book"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 </qualifiedTypeNameHistroy>

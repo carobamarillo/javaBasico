@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Listado de libros</h1>
+    
+    <table>
+    <thead>
+    	<tr>
+    		<th> Titulo</th>
+    	</tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    
+    
+    <p th:text = "'Nombre: ' + ${book.getName()}  
+    + ${book.getBookDetails().getAutor()}"></p>
+	<a class="btn btn-danger" th:href="@{/delete(id=${book.getIdBook()})}"> delete </a>
+  </body>
+</html>

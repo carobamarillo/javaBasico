@@ -1,0 +1,47 @@
+package com.OneToOne.OneToOneEj.Model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+
+@Entity
+public class Book {
+	
+	@Id
+	
+	@GeneratedValue
+	private long idBook;
+	
+	private String name;
+	
+	@OneToOne(cascade = CascadeType.ALL)
+	@PrimaryKeyJoinColumn
+	private BookDetails bookDetails;
+		
+	
+	public long getIdBook() {
+		return idBook;
+	}
+
+	public void setIdBook(long idBook) {
+		this.idBook = idBook;
+	}
+
+	public Book(){}
+	
+	public Book(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Index</h1>
+    
+    <p th:text = "'El alumno ' + ${alu.getNombreAlumno()} 
+    + ' asiste a la faculdad de ' 
+    + ${alu.getSede().getNombreSede()}"></p>
+    
+    </body>
+</html>

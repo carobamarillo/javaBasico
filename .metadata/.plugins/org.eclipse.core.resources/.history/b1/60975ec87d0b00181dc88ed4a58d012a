@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+    <title>Formulario</title>
+  </head>
+  <body>
+  <div class="container" style="margin-top: 2em">
+    <h1 style="">Agregar libro</h1>
+    <div  class= "form">
+    <form action="/form" method = "post">
+    
+    	<label>Titulo</label>
+     	<input type = "text" th:field = "${book.name}"/>
+       	<label for="autor">Autor</label>
+    	<input id="autor" type = "text" th:field = "${details.autor}"/>
+    	<label>Editorial</label>
+    	<input type = "text" th:field = "${details.editorial}"/>
+    	
+    	<input style="border-radius: 10px; margin-top: 1em; font-size: 10px " type = "submit" 
+    	value = "Alta Libro"/>
+    </form>
+    </div>
+    </div>
+  </body>
+</html>

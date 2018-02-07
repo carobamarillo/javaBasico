@@ -1,0 +1,8 @@
+package com.Ejercicio1.Formulario.Model;
+
+public class Empleado {
+	private String nombre,apellido;
+	private int dni,legajo,departamento;
+	private Date fechaDeIngreso;
+	
+}

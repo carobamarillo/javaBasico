@@ -1,0 +1,10 @@
+package com.OneToOne.OneToOneEj.Model;
+
+@Entity
+public class BookDetails {
+	
+	@Id
+	private long idBookDetails
+	
+	
+}
