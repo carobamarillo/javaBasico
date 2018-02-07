@@ -1,0 +1,15 @@
+package com.OneToMany.DemoCaro.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Pedido {
+	
+	@Id
+	@GeneratedValue
+	private long idPedido;
+	
+	private String nombreProducto;
+}

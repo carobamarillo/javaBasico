@@ -1,0 +1,16 @@
+package com.OneToMany.DemoCaro.Model;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Direccion {
+	@Id
+	@GeneratedValue
+	private long idDireccion;
+	
+	private String direccion,nroDireccion,localidad;
+	
+	//Una direccion tiene muchos pedidos 
+	@OneToMany
+}
