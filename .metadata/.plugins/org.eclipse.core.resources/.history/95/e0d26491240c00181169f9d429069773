@@ -18,7 +18,7 @@ public class MainController {
 	@Autowired
 	private DaoPedido daoPedido;
 	@Autowired
-	private DaoCliente daoCliente;
+	private DaoCliente daoCLiente;
 	@Autowired
 	private DaoDireccion daoDireccion;
 	
@@ -34,7 +34,6 @@ public class MainController {
 		
 		return modelAndView;
 	}
-	
 	
 	
 	
