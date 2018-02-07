@@ -1,6 +1,0 @@
-package com.ejercicio11;
-
-public class Orden {
-	private int numero;
-	private String fecha, modeloPC,problema;
-}

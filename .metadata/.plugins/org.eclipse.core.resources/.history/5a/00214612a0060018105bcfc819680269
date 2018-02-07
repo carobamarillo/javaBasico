@@ -1,5 +1,0 @@
-package com.ejercicio9;
-
-public class Pasajero extends Persona {
-
-}

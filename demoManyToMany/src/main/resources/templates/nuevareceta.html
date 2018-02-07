@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crea receta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--   <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />-->   
+
+</head>
+<body>
+<h1>Dar de alta una nueva receta</h1>
+
+  
+<form action="#" th:action="@{/crearreceta}" th:object="${receta}" method="post">
+    <p>Nombre de la Receta: <input type="text" th:field="*{NombreReceta}" /></p>
+<!-- 	<p>Comment: <input type="text" name="comment" /> </p> -->
+    <p><input type="submit" value="Post" /> <input type="reset" value="Reset" /></p>
+</form>
+
+</body>
+</html>

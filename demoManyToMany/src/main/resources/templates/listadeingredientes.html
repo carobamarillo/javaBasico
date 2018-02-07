@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crea receta</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!--   <link rel="stylesheet" type="text/css"
+          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />-->   
+
+</head>
+<body>
+ <!-- <p th:text="${mensaje}"></p> -->
+<h1>Receta:</h1>
+<h2> <p th:text="${receta.getNombreReceta()}" /> </h2>
+
+
+<form action="#" th:action="@{/agregaingrediente}" th:object="${receta}" method="post">
+  <p>Id de receta <input type="text" th:field="*{id}" /></p>
+    <p>Id de Ingrediente: <input type="text" name="idingrediente" /></p>
+    <p>QTY: <input type="text" name="qty" /></p>
+	<p>UM: <input type="text" name="um" /> </p>
+    <p><input type="submit" value="Post" /> <input type="reset" value="Reset" /></p>
+</form>
+
+<a th:href="@{/grabarpasosreceta(id=${receta.getId()})}"> Grabar los Pasos de la Receta! </a>
+ 
+<br></br>
+ 
+<!--  <div th:if="${carritopasos != null}"> -->
+<h3> Pasos de la receta</h3>
+
+<table >
+  <tr>
+   <th>Ingrediente</th>
+  	<th>Qty</th>
+  	<th>UM</th>   
+   </tr> 
+  
+   <tr th:each="p: ${carritopasos}">
+  	<td th:text="${p.getIngrediente().getNombreIng()}"></td> 
+     <td th:text="${p.getQty()}"></td> 
+     <td th:text="${p.getUm()}"></td>
+       
+  </tr>
+</table>
+
+<!--  </div> --> 
+
+
+
+<h1>Ingredientes Disponibles:</h1>
+ <table >
+  <tr>
+   <th>id</th>
+   	<th>Imagen</th>
+  	<th>Nombre</th>
+  	<th>Marca</th>   
+ 
+   </tr> 
+   <tr th:each="ing: ${listaingredientes}">
+   
+  	<td th:text="${ing.getId()}"></td> 
+  	 <td> <img src="#" th:src="@{ ${ing.getUrlImage()} }" width="60" height="60" />  </td>  
+     <td th:text="${ing.getNombreIng()}"></td> 
+     <td th:text="${ing.getMarca()}"></td>
+    
+    
+     <!--   <td> <a th:href="@{/deletecomments(id=${alu.id})}"> delete </a> </td> -->
+    
+   <!--    <td> <a class="btn btn-danger" th:href="@{/deletealumno(id=${alu.id})}"> delete </a> </td>    -->
+    
+  </tr>
+</table>
+
+
+</body>
+</html>

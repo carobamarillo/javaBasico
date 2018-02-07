@@ -1,9 +1,0 @@
-package com.ejercicio13;
-
-public class Empleado extends Persona {
-	private int salarioHora;
-	private int horasTrabajadas;
-	
-	
-	
-}

@@ -1,5 +1,0 @@
-package com.ejercicio13;
-
-public class Persona {
-	String nombre,cargo;
-}

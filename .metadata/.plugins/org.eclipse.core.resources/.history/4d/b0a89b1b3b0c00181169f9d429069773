@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Index</h1>
+    
+    <p th:text = "'El cliente ' + ${cliente.getNombreCliente()} 
+    + ' pidio un ' 
+    + ${cliente.getPedido().getNombrePedido()}"></p>
+    
+    </body>
+</html>

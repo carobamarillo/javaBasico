@@ -1,9 +1,0 @@
-package com.ejercicio11;
-
-import java.util.ArrayList;
-
-public class Empresa {
-	private ArrayList<Repuesto> repuestos;
-	private String nombre;
-	
-}
