@@ -1,0 +1,59 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+
+    <title>Formulario</title>
+  </head>
+  <body>
+     <div class="container" style="margin-top: 2em ;">
+    <div  class= "form" style="width: 200px">
+    <form action="/form" method = "post">
+    	
+   <label>Nombre</label>
+      <input type = "text" th:field = "${cliente.nombreCliente}"/>
+      
+      <label>Pedido</label>
+	  <select th:field = "${cliente.pedido}">
+	  	<option th:each = "producto : ${pedidos}"
+	  	th:value = "${producto.getIdPedido()}"
+	  	th:text = "${producto.getNombrePedido()}">
+	  	</option>
+	  </select>
+
+      <br/>
+      <br/>
+      <input type="submit" name="btn" value="Enviar"/>
+  
+    </form>
+    
+    <form>
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected = "selected">Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="col-auto my-1">
+      <div class="custom-control custom-checkbox mr-sm-2">
+        <input type="checkbox" class="custom-control-input" id="customControlAutosizing"></input>
+        <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+      </div>
+    </div>
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>
+    </div>
+    </div>
+    	  
+
+  </body>
+</html>
