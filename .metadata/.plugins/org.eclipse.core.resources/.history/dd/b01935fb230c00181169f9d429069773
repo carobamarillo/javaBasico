@@ -1,0 +1,37 @@
+package com.OneToMany.DemoCaro.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.OneToMany.DemoCaro.Model.DaoCliente;
+import com.OneToMany.DemoCaro.Model.DaoDireccion;
+import com.OneToMany.DemoCaro.Model.DaoPedido;
+
+@Controller
+public class MainController {
+	
+	@Autowired
+	private DaoPedido daoPedido;
+	@Autowired
+	private DaoCliente daoCLiente;
+	@Autowired
+	private DaoDireccion daoDireccion;
+	
+	@RequestMapping(value = "/",
+			method = RequestMethod.GET)
+	public ModelAndView formGet(){
+		
+		ModelAndView modelAndView = new ModelAndView();
+		
+		modelAndView.addObject("pedidos", daoPedido.findAll());
+		modelAndView.addObject("cliente", new Cliente);
+		modelAndView.setViewName("form");
+		
+		return modelAndView;
+	}
+	
+}

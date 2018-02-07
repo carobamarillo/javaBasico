@@ -1,0 +1,17 @@
+package com.OneToMany.DemoCaro.Controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MainController {
+	
+	@AutoWired
+	private DaoPedido daoPedido;
+	
+	@Autowired
+	private DaoCliente daoCLiente;
+	
+	@Autowired
+	private DaoDireccion daoDireccion;
+	
+}
