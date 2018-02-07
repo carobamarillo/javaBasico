@@ -17,7 +17,7 @@ public class Pedido {
 	
 	private String nombrePedido;
 	
-	@OneToMany(mappedBy = "sede")
+	@OneToMany(mappedBy = "pedido")
 	private List<Cliente> listaClientes;
 
 	public long getIdPedido() {

@@ -9,15 +9,17 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.OneToMany.DemoCaro.Model.Cliente;
 import com.OneToMany.DemoCaro.Model.DaoCliente;
-import com.OneToMany.DemoCaro.Model.DaoDireccion;
+//import com.OneToMany.DemoCaro.Model.DaoDireccion;
 import com.OneToMany.DemoCaro.Model.DaoPedido;
 import com.OneToMany.DemoCaro.Model.Pedido;
+
 
 @Controller
 public class MainController {
 	
 	@Autowired
 	private DaoPedido daoPedido;
+	
 	@Autowired
 	private DaoCliente daoCliente;
 	//@Autowired

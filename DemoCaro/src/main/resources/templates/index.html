@@ -6,9 +6,9 @@
   <body>
     <h1>Index</h1>
     
-    <p th:text = "'El  ' + ${pedido.getNombrePedido()} 
-    + ' le corresponde al cliente ' 
-    + ${pedido.getCliente().getNombreCliente()}"></p>
+    <p th:text = "'El cliente ' + ${cliente.getNombreCliente()} 
+    + ' pidio un ' 
+    + ${cliente.getPedido().getNombrePedido()}"></p>
     
     </body>
 </html>
