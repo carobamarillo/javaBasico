@@ -1,0 +1,52 @@
+package com.OneToMany.DemoCaro.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Pedido {
+
+	@Id
+	@GeneratedValue
+	private long idPedido;
+	
+	private String nombrePedido;
+	
+	//Muchos pedidos a un cliente 
+	@ManyToOne
+	//@JOINCOLUMN HACE LA UNION DE EL OBJETO CON EL LA PK DEL OTRO.
+	//EL OBJETO SEDE SE REFLEJA EN LA BD COMO UNA FOREIGN KEY Y SE ASIGNA
+	//EL VALOR DE LA PK DE LA OTRA TABLA.
+	//LE DA EL NOMBRE QUE TENGA EL ID DE LA OTRA TABLA
+	@JoinColumn(name = "idCliente")
+	private Cliente cliente;
+
+	public long getIdPedido() {
+		return idPedido;
+	}
+
+	public void setIdPedido(long idPedido) {
+		this.idPedido = idPedido;
+	}
+
+	public String getNombrePedido() {
+		return nombrePedido;
+	}
+
+	public void setNombrePedido(String nombrePedido) {
+		this.nombrePedido = nombrePedido;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+}
+	

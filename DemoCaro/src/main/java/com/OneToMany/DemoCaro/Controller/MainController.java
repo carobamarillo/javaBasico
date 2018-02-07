@@ -11,6 +11,7 @@ import com.OneToMany.DemoCaro.Model.Cliente;
 import com.OneToMany.DemoCaro.Model.DaoCliente;
 import com.OneToMany.DemoCaro.Model.DaoDireccion;
 import com.OneToMany.DemoCaro.Model.DaoPedido;
+import com.OneToMany.DemoCaro.Model.Pedido;
 
 @Controller
 public class MainController {
@@ -28,10 +29,21 @@ public class MainController {
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
-		modelAndView.addObject("pedidos", daoPedido.findAll());
-		modelAndView.addObject("cliente", new Cliente());
+		modelAndView.addObject("clientes", daoPedido.findAll());
+		modelAndView.addObject("pedido", new Cliente());
 		modelAndView.setViewName("form");
 		
+		return modelAndView;
+	}
+	
+	@RequestMapping(value = "/form",
+			method = RequestMethod.POST)
+	public ModelAndView formPost(@ModelAttribute Pedido pedido){
+		ModelAndView modelAndView = new ModelAndView();
+		daoPedido.save(pedido);
+		
+		modelAndView.addObject("pedido", pedido);
+		modelAndView.setViewName("index");
 		return modelAndView;
 	}
 	

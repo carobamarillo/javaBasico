@@ -1,0 +1,44 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+
+    <title>Formulario</title>
+  </head>
+  <body>
+     <div class="container" style="margin-top: 2em ;">
+    <div  class= "form" style="width: 200px">
+    <form action="/form" method = "post">
+    	
+   <label>Nombre</label>
+      <input type = "text" th:field = "${alumno.nombreAlumno}"/>
+      
+      <label>Apellido</label>
+      <input type = "text" th:field = "${alumno.apellido}"/>
+      
+      <label>DNI</label>
+      <input type = "number" th:field = "${alumno.dni}"/>
+      
+      <label>Sede</label>
+
+	  <!-- EN EL FIELD SELECCIONO CUAL VA A SER EL ATRIBUTO AL QUE SE LE VA A ASIGNAR LA SELECCIION
+	  EN EL VALUE VA EL ID DEL OBJETO (ES EL DATO QUE NECESITO UTILIZAR), Y EN EL TEXT
+	  VA EL DATO QUE QUIERO QUE SE VISUALICE -->
+	  <select th:field = "${alumno.sede}">
+	  	<option th:each = "s : ${sedes}"
+	  	th:value = "${s.getIdSede()}"
+	  	th:text = "${s.getNombreSede()}">
+	  	</option>
+	  </select>
+      <br/>
+      <br/>
+      <input type="submit" name="btn" value="Tuqui"/>
+    </form>
+    </form>
+    </div>
+    </div>
+
+  </body>
+</html>

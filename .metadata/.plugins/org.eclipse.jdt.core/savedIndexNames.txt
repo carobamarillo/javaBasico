@@ -30,7 +30,6 @@ INDEX VERSION 1.127+/home/alumno/Caro/.metadata/.plugins/org.eclipse.jdt.core
 2518568731.index
 356819701.index
 3542660237.index
-3812642664.index
 2174810535.index
 949366070.index
 189985610.index
@@ -43,7 +42,6 @@ INDEX VERSION 1.127+/home/alumno/Caro/.metadata/.plugins/org.eclipse.jdt.core
 3561148320.index
 877155912.index
 1322299443.index
-1292860127.index
 2797885487.index
 2617937074.index
 3642501493.index
@@ -121,7 +119,6 @@ INDEX VERSION 1.127+/home/alumno/Caro/.metadata/.plugins/org.eclipse.jdt.core
 3972010303.index
 2759691864.index
 1397495152.index
-4182394052.index
 3401374378.index
 4177870792.index
 627197713.index

@@ -1,0 +1,51 @@
+package com.OneToMany.DemoCaro.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Pedido {
+	
+	@Id
+	@GeneratedValue
+	private long idPedido;
+	
+	private String nombreProducto;
+	
+	//Muchos pedidos a un solo cliente
+	@ManyToOne
+	@JoinColumn(name = "idCliente")
+	private Cliente cliente;
+
+
+	public long getIdPedido() {
+		return idPedido;
+	}
+
+	public void setIdPedido(long idPedido) {
+		this.idPedido = idPedido;
+	}
+
+	public String getNombreProducto() {
+		return nombreProducto;
+	}
+
+	public void setNombreProducto(String nombreProducto) {
+		this.nombreProducto = nombreProducto;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+
+	
+	
+}

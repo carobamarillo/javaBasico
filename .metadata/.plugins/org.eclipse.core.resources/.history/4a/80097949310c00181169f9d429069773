@@ -1,0 +1,26 @@
+package com.OneToMany.DemoCaro.Model;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Cliente {
+	
+	@Id
+	@GeneratedValue
+	private long idCliente;
+	
+	private String nombreCliente;
+	
+	//Un cliente tiene muchos pedidos
+	@ManyToOne
+	@JoinColumn(name = "idPedido")
+	private Pedido pedido;
+	
+	
+}

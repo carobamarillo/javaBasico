@@ -1,24 +1,24 @@
 package com.OneToMany.DemoCaro.Model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
 
 @Entity
 public class Pedido {
-	
+
 	@Id
 	@GeneratedValue
 	private long idPedido;
 	
-	private String nombreProducto;
+	private String nombrePedido;
 	
-	//Muchos pedidos tienen un solo cliente
-	@ManyToOne
-	@JoinColumn
-	private Pedido pedido;
+	@OneToMany(mappedBy = "sede")
+	private List<Cliente> listaClientes;
 
 	public long getIdPedido() {
 		return idPedido;
@@ -28,21 +28,21 @@ public class Pedido {
 		this.idPedido = idPedido;
 	}
 
-	public String getNombreProducto() {
-		return nombreProducto;
+	public String getNombrePedido() {
+		return nombrePedido;
 	}
 
-	public void setNombreProducto(String nombreProducto) {
-		this.nombreProducto = nombreProducto;
+	public void setNombrePedido(String nombrePedido) {
+		this.nombrePedido = nombrePedido;
 	}
 
-	public Pedido getPedido() {
-		return pedido;
+	public List<Cliente> getListaClientes() {
+		return listaClientes;
 	}
 
-	public void setPedido(Pedido pedido) {
-		this.pedido = pedido;
+	public void setListaClientes(List<Cliente> listaClientes) {
+		this.listaClientes = listaClientes;
 	}
-	
 	
 }
+	

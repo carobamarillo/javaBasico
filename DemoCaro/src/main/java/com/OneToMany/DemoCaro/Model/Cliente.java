@@ -1,11 +1,11 @@
 package com.OneToMany.DemoCaro.Model;
 
-import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Cliente {
@@ -14,11 +14,12 @@ public class Cliente {
 	@GeneratedValue
 	private long idCliente;
 	
-	private String nombreCliente,apellidoCliente;
+	private String nombreCliente;
 	
 	//Un cliente tiene muchos pedidos
-	@OneToMany
-	private List<Pedido> listaPedidos;
+	@ManyToOne
+	@JoinColumn(name = "idPedido")
+	private Pedido pedido;
 
 	public long getIdCliente() {
 		return idCliente;
@@ -36,20 +37,15 @@ public class Cliente {
 		this.nombreCliente = nombreCliente;
 	}
 
-	public String getApellidoCliente() {
-		return apellidoCliente;
+	public Pedido getPedido() {
+		return pedido;
 	}
 
-	public void setApellidoCliente(String apellidoCliente) {
-		this.apellidoCliente = apellidoCliente;
+	public void setPedido(Pedido pedido) {
+		this.pedido = pedido;
 	}
-
-	public List<Pedido> getListaPedidos() {
-		return listaPedidos;
-	}
-
-	public void setListaPedidos(List<Pedido> listaPedidos) {
-		this.listaPedidos = listaPedidos;
-	}	
+	
+	
+	
 	
 }
