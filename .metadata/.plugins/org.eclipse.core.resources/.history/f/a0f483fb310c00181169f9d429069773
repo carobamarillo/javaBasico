@@ -29,8 +29,8 @@ public class MainController {
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
-		modelAndView.addObject("pedidos", daoPedido.findAll());
-		modelAndView.addObject("cliente", new Cliente());
+		modelAndView.addObject("clientes", daoPedido.findAll());
+		modelAndView.addObject("pedido", new Cliente());
 		modelAndView.setViewName("form");
 		
 		return modelAndView;
@@ -38,12 +38,11 @@ public class MainController {
 	
 	@RequestMapping(value = "/form",
 			method = RequestMethod.POST)
-	public ModelAndView formPost(@ModelAttribute Cliente cliente){
-		
+	public ModelAndView formPost(@ModelAttribute Pedido pedido){
 		ModelAndView modelAndView = new ModelAndView();
-		daoCliente.save(cliente);
+		daoPedido.save(pedido);
 		
-		modelAndView.addObject("cliente", cliente);
+		modelAndView.addObject("pedido", pedido);
 		modelAndView.setViewName("index");
 		return modelAndView;
 	}

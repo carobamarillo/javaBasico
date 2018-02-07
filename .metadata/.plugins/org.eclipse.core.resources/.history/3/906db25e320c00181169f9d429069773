@@ -20,10 +20,10 @@
 	  EN EL FIELD SELECCIONO CUAL VA A SER EL ATRIBUTO AL QUE SE LE VA A ASIGNAR LA SELECCIION
 	  EN EL VALUE VA EL ID DEL OBJETO (ES EL DATO QUE NECESITO UTILIZAR), Y EN EL TEXT
 	  VA EL DATO QUE QUIERO QUE SE VISUALICE 
-	  <select th:field = "${cliente.pedido}">
-	  	<option th:each = "producto : ${pedidos}"
-	  	th:value = "${producto.getIdPedido()}"
-	  	th:text = "${producto.getNombrePedido()}">
+	  <select th:field = "${pedido.cliente}">
+	  	<option th:each = "s : ${sedes}"
+	  	th:value = "${s.getIdSede()}"
+	  	th:text = "${s.getNombreSede()}">
 	  	</option>
 	  </select>
 	  

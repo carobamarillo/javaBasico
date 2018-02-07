@@ -23,7 +23,7 @@
 	  <select th:field = "${cliente.pedido}">
 	  	<option th:each = "producto : ${pedidos}"
 	  	th:value = "${producto.getIdPedido()}"
-	  	th:text = "${producto.getNombrePedido()}">
+	  	th:text = "${s.getNombreSede()}">
 	  	</option>
 	  </select>
 	  
