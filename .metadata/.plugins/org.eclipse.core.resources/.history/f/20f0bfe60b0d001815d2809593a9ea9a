@@ -1,0 +1,18 @@
+package com.Tp.MVC.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Libro {
+	
+	@Id
+	@GeneratedValue
+	private long idLibro;
+	
+	private String nombreLibro;
+	
+	
+	
+}

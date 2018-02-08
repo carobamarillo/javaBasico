@@ -1,0 +1,21 @@
+package com.Tp.MVC.Model;
+
+import java.util.ArrayList;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Transient;
+
+@Entity
+public class Autor {
+	
+	@Id
+	@GeneratedValue
+	private long idAutor;
+	
+	private String nombreAutor;
+	
+	@Transient
+	private ArrayList<Long> listaIdsAutores;
+}

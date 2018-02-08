@@ -5474,3 +5474,108 @@ org.eclipse.core.runtime.CoreException: Launch configuration DemoManyToManyAppli
 2018-02-08 16:53:11,315 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-02-08 16:53:11,321 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-02-08 16:53:11,321 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:06:04,702 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:04,704 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:06:04,705 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:06:04,711 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:04,711 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:06:06,442 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:06,442 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:06:06,443 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:06:06,447 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:06,447 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:06:18,188 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:18,190 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:06:18,191 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:06:18,194 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:18,195 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:06:19,433 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:19,434 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:06:19,435 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:06:19,439 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:19,439 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:06:36,189 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:36,190 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:06:36,191 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:06:36,194 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:06:36,195 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:09:00,398 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:09:00,399 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:09:00,400 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:09:00,404 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:09:00,404 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:09:56,334 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:09:56,335 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:09:56,336 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:09:56,339 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:09:56,340 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:10:02,564 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:02,565 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:10:02,566 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:10:02,571 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:02,571 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:10:18,395 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:18,396 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:10:18,398 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:10:18,402 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:18,402 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:10:33,486 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:33,488 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:10:33,489 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:10:33,493 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:33,494 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:10:52,164 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:52,165 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:10:52,167 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:10:52,171 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:10:52,172 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:11:07,869 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:11:07,870 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:11:07,871 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:11:07,875 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:11:07,875 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:11:53,366 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:11:53,367 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:11:53,368 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:11:53,371 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:11:53,371 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:12:32,466 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:12:32,467 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:12:32,469 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:12:32,474 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:12:32,474 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:12:36,517 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:12:36,518 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:12:36,519 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:12:36,522 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:12:36,523 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:13:39,901 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:13:39,901 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:13:39,902 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:13:39,906 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:13:39,907 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:13:50,808 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:13:50,809 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:13:50,811 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:13:50,815 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:13:50,816 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:14:30,411 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:14:30,412 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:14:30,414 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:14:30,417 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:14:30,417 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:14:43,711 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:14:43,712 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:14:43,713 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:14:43,716 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:14:43,716 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:14:54,125 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:14:54,128 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:14:54,129 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 17:14:54,134 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:14:54,134 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
+2018-02-08 17:18:49,500 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:18:49,501 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 17:18:49,511 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2018-02-08 17:18:49,521 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 17:18:49,522 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/Receta/src/test/resources

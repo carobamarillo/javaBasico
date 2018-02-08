@@ -26,6 +26,8 @@ public class Receta {
 			fetch = FetchType.EAGER)
 	private List<RecetaIng> listaRecetaIngA;
 
+	
+	
 	public long getIdReceta() {
 		return idReceta;
 	}

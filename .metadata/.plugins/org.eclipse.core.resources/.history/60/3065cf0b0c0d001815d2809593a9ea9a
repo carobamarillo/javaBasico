@@ -1,0 +1,29 @@
+package com.Tp.MVC.Model;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import com.ManyToMany.Receta.Model.RecetaIng;
+
+@Entity
+public class Libro {
+	
+	@Id
+	@GeneratedValue
+	private long idLibro;
+	
+	private String nombreLibro;
+	
+	@OneToMany
+	@OneToMany(mappedBy = "receta",
+	fetch = FetchType.EAGER)
+	private List<RecetaIng> listaRecetaIngA;
+
+	
+	
+}
