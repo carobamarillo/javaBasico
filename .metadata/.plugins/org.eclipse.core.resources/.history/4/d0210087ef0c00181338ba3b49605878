@@ -30,7 +30,7 @@ public class RecetaIng {
 		this.idRecetaIng = idRecetaIng;
 	}
 
-	public Receta getReceta() {
+	/*public Receta getReceta() {
 		return receta;
 	}
 
@@ -44,6 +44,6 @@ public class RecetaIng {
 
 	public void setIngrediente(Ingrediente ingrediente) {
 		this.ingrediente = ingrediente;
-	}
+	}*/
 
 }

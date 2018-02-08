@@ -14,9 +14,7 @@ public class RecetaIng {
 	@GeneratedValue
 	private long idRecetaIng;
 	
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name="idReceta")
-	private Receta receta;
+
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="idIngrediente")

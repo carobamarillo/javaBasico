@@ -14,9 +14,7 @@ public class RecetaIng {
 	@GeneratedValue
 	private long idRecetaIng;
 	
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name="idReceta")
-	private Receta receta;
+
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="idIngrediente")
@@ -30,7 +28,7 @@ public class RecetaIng {
 		this.idRecetaIng = idRecetaIng;
 	}
 
-	public Receta getReceta() {
+	/*public Receta getReceta() {
 		return receta;
 	}
 
@@ -44,6 +42,6 @@ public class RecetaIng {
 
 	public void setIngrediente(Ingrediente ingrediente) {
 		this.ingrediente = ingrediente;
-	}
+	}*/
 
 }
