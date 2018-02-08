@@ -7,7 +7,7 @@
     <h1>Formulario</h1>
     <form th:action="formulario" th:object="${receta}" method="post">
     <label>Nombre</label>
-    <input type="text" th:field="*{nombre}" 
+    <input type="text" th:field="*{nombreReceta}" 
     placeholder="Ingrese nombre"/>
     <br/>
     <input type="submit" value="Eviar"/>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Formulario Receta</title>
+    <title>Formu Piola</title>
   </head>
   <body>
     <h1>Formulario</h1>
-    <form th:action="formulario" th:object="${receta}" method="post">
+    <form th:action="formulario" th:object="${alu}" method="post">
     <label>Nombre</label>
     <input type="text" th:field="*{nombre}" 
     placeholder="Ingrese nombre"/>
