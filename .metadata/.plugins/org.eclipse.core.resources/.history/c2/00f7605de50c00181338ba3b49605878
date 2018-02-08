@@ -13,7 +13,7 @@
 		<tr th:each = "a : ${lista}">
 			<td th:text = "${a.getNombreReceta()}"></td>
 			<td>
-				<a th:href="@{/agregar(idIngrediente=${a.getIdReceta()})}">Agregar</a>
+				<a th:href="@{/agregar(idIngrediente=${a.getIdReceta()})}">Agergar</a>
 			</td>
 		</tr>
 	</table>
