@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+//import javax.persistence.ManyToOne;
 import javax.persistence.Transient;
 
 @Entity
@@ -20,7 +20,7 @@ public class Autor {
 	@Transient
 	private ArrayList<Long> listaIdsAutores;
 
-	@ManyToOne
+	//@ManyToOne
 	
 	
 	
@@ -46,7 +46,5 @@ public class Autor {
 
 	public void setListaIdsAutores(ArrayList<Long> listaIdsAutores) {
 		this.listaIdsAutores = listaIdsAutores;
-	}
-	
-	
+	}	
 }
