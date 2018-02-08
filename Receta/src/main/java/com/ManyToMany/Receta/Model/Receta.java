@@ -2,6 +2,7 @@ package com.ManyToMany.Receta.Model;
 
 import java.util.List;
 
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -14,8 +15,9 @@ public class Receta {
 	
 	private String nombreReceta;
 	
-	@OneToMany(mappedBy = "receta")
-	private List<RecetaIng> listaRecetaIng;
+	@OneToMany(mappedBy = "receta",
+			fetch = FetchType.EAGER)
+	private List<RecetaIng> listaRecetaIngA;
 
 	public long getIdReceta() {
 		return idReceta;
@@ -33,12 +35,12 @@ public class Receta {
 		this.nombreReceta = nombreReceta;
 	}
 
-	public List<RecetaIng> getListaRecetaIng() {
-		return listaRecetaIng;
+	public List<RecetaIng> getListaRecetaIngA() {
+		return listaRecetaIngA;
 	}
 
 	public void setListaRecetaIng(List<RecetaIng> listaRecetaIng) {
-		this.listaRecetaIng = listaRecetaIng;
+		this.listaRecetaIngA = listaRecetaIng;
 	}
 	
 	

@@ -76,8 +76,8 @@ public class MainController {
 			RecetaIng recetaIng = new RecetaIng();
 			Receta receta = daoReceta.findOne(recetaHTML.getIdReceta());
 			
-			recetaIng.setReceta(receta);
-			recetaIng.setIngrediente(daoIngrediente.findOne(idIngrediente));
+			//recetaIng.setReceta(receta);
+			//recetaIng.setIngrediente(daoIngrediente.findOne(idIngrediente));
 			
 			daoRecetaIng.save(recetaIng);
 			
@@ -91,7 +91,7 @@ public class MainController {
 		public String detalle(Model model){
 		
 			Receta receta = daoReceta.findOne((long)1);
-			model.addAttribute("receta", receta.getListaRecetaIng());
+			model.addAttribute("receta", receta.getListaRecetaIngA());
 			
 			return "detalle";
 	}

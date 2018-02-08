@@ -15,19 +15,19 @@ public class Ingrediente {
 	
 	@Id
 	@GeneratedValue
-	private long idAlumno;
+	private long idIngrediente;
 	private String nombreIngrediente;
 	
 	@OneToMany(mappedBy = "ingrediente", 
 			fetch = FetchType.EAGER)
-	private List<RecetaIng> listaRecetaIng;
+	private List<RecetaIng> listaRecetaIngB;
 
-	public long getIdAlumno() {
-		return idAlumno;
+	public long getIdIngrediente() {
+		return idIngrediente;
 	}
 
-	public void setIdAlumno(long idAlumno) {
-		this.idAlumno = idAlumno;
+	public void setIdIngrediente(long idAlumno) {
+		this.idIngrediente = idAlumno;
 	}
 
 	public String getNombreIngrediente() {
@@ -38,12 +38,12 @@ public class Ingrediente {
 		this.nombreIngrediente = nombreIngrediente;
 	}
 
-	public List<RecetaIng> getListaRecetaIng() {
-		return listaRecetaIng;
+	public List<RecetaIng> getListaRecetaIngB() {
+		return listaRecetaIngB;
 	}
 
-	public void setListaRecetaIng(List<RecetaIng> listaRecetaIng) {
-		this.listaRecetaIng = listaRecetaIng;
+	public void setListaRecetaIngB(List<RecetaIng> listaRecetaIng) {
+		this.listaRecetaIngB = listaRecetaIng;
 	}
 	
 	

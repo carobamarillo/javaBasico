@@ -1,6 +1,7 @@
 package com.ManyToMany.Receta.Model;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -13,11 +14,9 @@ public class RecetaIng {
 	@GeneratedValue
 	private long idRecetaIng;
 	
-	@ManyToOne
-	@JoinColumn(name="idReceta")
-	private Receta receta;
+
 	
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="idIngrediente")
 	private Ingrediente ingrediente;
 
@@ -29,7 +28,7 @@ public class RecetaIng {
 		this.idRecetaIng = idRecetaIng;
 	}
 
-	public Receta getReceta() {
+	/*public Receta getReceta() {
 		return receta;
 	}
 
@@ -43,6 +42,6 @@ public class RecetaIng {
 
 	public void setIngrediente(Ingrediente ingrediente) {
 		this.ingrediente = ingrediente;
-	}
+	}*/
 
 }
