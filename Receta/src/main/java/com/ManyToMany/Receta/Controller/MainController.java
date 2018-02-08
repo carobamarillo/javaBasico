@@ -90,7 +90,7 @@ public class MainController {
 			method = RequestMethod.GET)
 		public String detalle(Model model){
 		
-			Receta receta = daoReceta.findOne((long)1);
+			Receta receta = daoReceta.findOne((long)8);
 			model.addAttribute("receta", receta.getListaRecetaIngA());
 			
 			return "detalle";

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title></title>
+  </head>
+  <body>
+	<table>
+	<tr th:each="r:${receta}">
+	<td th:text="${r.getReceta().getNombreReceta()}"></td>
+	<td th:text="${r.getIngrediente().getNombreIngrediente()}"></td>
+	</tr>
+	</table>
+  </body>
+</html>

@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
   <head>
-    <title>Formulario Receta</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+    <title>Receta</title>
   </head>
-  <body>
-    <h1>Formulario</h1>
-    <form th:action="formulario" th:object="${receta}" method="post">
-    <label>Nombre</label>
-    <input type="text" th:field="*{nombreReceta}" 
-    placeholder="Ingrese nombre"/>
-    <br/>
-    <input type="submit" value="Enviar"/>
+  <body style="background-color: #211d1de6 ; color: #eaeef2 ">
+  <div class="container - fliud" style="margin-top: 5em">
+    <form th:action="formulario" th:object="${receta}" method="post" class="form-inline">
+      <div class="form-group mb-2">
+    	<label for="receta">Ingrese nombre de la receta: </label>
+    	<input type="text" style="margin-left: 1em" id="receta" th:field="*{nombreReceta}" 
+    	placeholder="Ingrese nombre"/>
+    	<input class="btn btn-warning btn-sm" style="margin-left: 1em" type="submit" value="Enviar"/>
+      </div>
+    	
     </form>
+    </div>
   </body>
 </html>

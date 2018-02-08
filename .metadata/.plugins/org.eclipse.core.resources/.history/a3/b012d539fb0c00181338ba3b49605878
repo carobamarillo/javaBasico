@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Index-Listado</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+</head>
+ <body style="background-color: #211d1de6 ; color: #eaeef2 ">
+	<table>
+		<tr>
+			<td>Nombre Receta</td>
+		</tr>
+		<tr th:each = "a : ${lista}">
+			<td th:text = "${a.getNombreReceta()}"></td>
+			<td>
+				<a th:href="@{/ingredientes(idReceta=${a.getIdReceta()})}">+ Agregar Ingrediente</a>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
