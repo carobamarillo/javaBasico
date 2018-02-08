@@ -31,7 +31,7 @@ public class MainController {
 			method=RequestMethod.GET)
 	public String crearRecetaGet(Model model){
 		
-		model.addAttribute("Receta", new Receta());
+		model.addAttribute("receta", new Receta());
 		return "formulario";
 	}
 	
@@ -67,7 +67,7 @@ public class MainController {
 		return "agregar";
 	}
 	
-	@RequestMapping(value = "/agregar",
+	@RequestMapping(value = "/ingredientes",
 			method = RequestMethod.POST)
 	public String agregarIngredientesPost(Model model,
 			@RequestParam("idIngrediente") long idIngrediente,
@@ -76,8 +76,8 @@ public class MainController {
 			RecetaIng recetaIng = new RecetaIng();
 			Receta receta = daoReceta.findOne(recetaHTML.getIdReceta());
 			
-			//recetaIng.setReceta(receta);
-			//recetaIng.setIngrediente(daoIngrediente.findOne(idIngrediente));
+			recetaIng.setReceta(receta);
+			recetaIng.setIngrediente(daoIngrediente.findOne(idIngrediente));
 			
 			daoRecetaIng.save(recetaIng);
 			
@@ -86,7 +86,7 @@ public class MainController {
 			return "index";
 	}
 	
-	@RequestMapping(value="detalle", 
+	@RequestMapping(value="/detalle", 
 			method = RequestMethod.GET)
 		public String detalle(Model model){
 		

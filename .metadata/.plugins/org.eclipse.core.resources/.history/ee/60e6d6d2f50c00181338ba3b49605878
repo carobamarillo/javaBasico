@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Formulario2</title>
+  </head>
+  <body>
+    <form th:action="ingredientes" method="post">
+    <input type="hidden" th:field="${receta.idReceta}"/>
+    <label>Ingrediente</label>
+	<select th:name="idIngrediente" >
+		<option th:each="i : ${ingredientes}"
+		th:value="${i.getIdIngrediente()}"
+		th:text="${i.getNombreIngrediente()}"></option>
+	</select>
+    <br/>
+    <input type="submit" value=" + Agregar"/>
+    </form>
+  </body>
+</html>
