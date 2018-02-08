@@ -42,6 +42,7 @@ public class MainController {
 			@ModelAttribute Receta receta){
 		
 		daoReceta.save(receta);
+		//Select multiple
 		for (Long idIngrediente : receta.getListaIdsIngredientes()) {
 			RecetaIng recetaIng = new RecetaIng();
 			recetaIng.setReceta(receta);
@@ -98,7 +99,7 @@ public class MainController {
 		public String detalle(Model model){
 		
 			Receta receta = daoReceta.findOne((long)8);
-			model.addAttribute("receta", receta.getListaRecetaIngA());
+			model.addAttribute("receta", receta.getListaIdsIngredientes());
 			
 			return "detalle";
 	}
