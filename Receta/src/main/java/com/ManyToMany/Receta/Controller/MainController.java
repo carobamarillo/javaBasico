@@ -32,6 +32,7 @@ public class MainController {
 	public String crearRecetaGet(Model model){
 		
 		model.addAttribute("receta", new Receta());
+		model.addAttribute("ingredientes", daoIngrediente.findAll());
 		return "formulario";
 	}
 	
@@ -41,6 +42,12 @@ public class MainController {
 			@ModelAttribute Receta receta){
 		
 		daoReceta.save(receta);
+		for (Long idIngrediente : receta.getListaIdsIngredientes()) {
+			RecetaIng recetaIng = new RecetaIng();
+			recetaIng.setReceta(receta);
+			recetaIng.setIngrediente(daoIngrediente.findOne(idIngrediente));
+			daoRecetaIng.save(recetaIng);
+		}
 		model.addAttribute("lista", daoReceta.findAll());
 		
 		return "index";
