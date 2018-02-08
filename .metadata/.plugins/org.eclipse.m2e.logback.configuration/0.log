@@ -5388,3 +5388,14 @@ org.eclipse.core.runtime.CoreException: Launch configuration DemoManyToManyAppli
 2018-02-08 16:25:54,025 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
 2018-02-08 16:25:54,028 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-02-08 16:25:54,029 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/Receta/src/test/resources
+2018-02-08 16:36:33,484 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.Tp:MVC:0.0.1-SNAPSHOT @ /home/alumno/Caro/MVC/pom.xml.
+2018-02-08 16:36:37,822 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MVC/src/main/java
+2018-02-08 16:36:37,822 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MVC/src/main/resources
+2018-02-08 16:36:37,825 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MVC/src/main/resources
+2018-02-08 16:36:37,827 [Worker-17] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MVC/src/test/java
+2018-02-08 16:36:38,182 [Worker-17] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2018-02-08 16:36:41,609 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 16:36:41,629 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-08 16:36:41,669 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-02-08 16:36:41,678 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-08 16:36:41,679 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/MVC/src/test/resources
