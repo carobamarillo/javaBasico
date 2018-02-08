@@ -1,5 +1,7 @@
 package com.ManyToMany.Receta.Model;
 
-public interface DaoReceta {
+import org.springframework.data.repository.CrudRepository;
+
+public interface DaoReceta extends CrudRepository<Receta,Long>{
 
 }

@@ -1,0 +1,48 @@
+package com.ManyToMany.Receta.Model;
+
+
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+@Entity
+public class Ingrediente {
+	
+	@Id
+	@GeneratedValue
+	private long idAlumno;
+	private String nombreIngrediente;
+	
+	@OneToMany(mappedBy = "ingrediente", 
+			fetch = FetchType.EAGER)
+	private List<RecetaIng> listaRecetaIng;
+
+	public long getIdAlumno() {
+		return idAlumno;
+	}
+
+	public void setIdAlumno(long idAlumno) {
+		this.idAlumno = idAlumno;
+	}
+
+	public String getNombreIngrediente() {
+		return nombreIngrediente;
+	}
+
+	public void setNombreIngrediente(String nombreIngrediente) {
+		this.nombreIngrediente = nombreIngrediente;
+	}
+
+	public List<RecetaIng> getListaRecetaIng() {
+		return listaRecetaIng;
+	}
+
+	public void setListaRecetaIng(List<RecetaIng> listaRecetaIng) {
+		this.listaRecetaIng = listaRecetaIng;
+	}
+	
+	
+}

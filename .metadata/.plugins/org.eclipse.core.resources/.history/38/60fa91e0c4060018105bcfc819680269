@@ -1,7 +1,0 @@
-package com.ejercicio14;
-
-public class Lavadora {
-	private int carga;
-	
-
-}

@@ -1,0 +1,16 @@
+package com.ManyToMany.Receta.Model;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+public class Receta {
+	
+	@Id
+	@GeneratedValue
+	private long idReceta;
+	
+	private String nombreReceta;
+	
+	@OneToMany(mappedBy = "receta")
+	private List<RecetaIng> listaRecetaIng;
+}

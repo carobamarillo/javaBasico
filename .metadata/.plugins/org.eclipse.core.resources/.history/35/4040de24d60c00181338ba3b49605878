@@ -1,0 +1,27 @@
+package com.ManyToMany.Receta.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.ManyToMany.Receta.Model.DaoIngrediente;
+import com.ManyToMany.Receta.Model.DaoReceta;
+import com.ManyToMany.Receta.Model.DaoRecetaIng;
+
+@Controller
+public class MainController {
+	
+	@Autowired
+	private DaoReceta daoReceta;
+	
+	@Autowired
+	private DaoIngrediente daoIngrediente;
+	
+	@Autowired
+	private DaoRecetaIng daoRecetaIng;
+	
+	
+	@RequestMapping(value="/formulario",
+			method=RequestMethod.GET)
+	public ModelAndView crearReceta() 
+
+}

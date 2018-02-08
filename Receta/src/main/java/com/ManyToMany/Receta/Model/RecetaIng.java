@@ -1,5 +1,48 @@
 package com.ManyToMany.Receta.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class RecetaIng {
+	
+	@Id
+	@GeneratedValue
+	private long idRecetaIng;
+	
+	@ManyToOne
+	@JoinColumn(name="idReceta")
+	private Receta receta;
+	
+	@ManyToOne
+	@JoinColumn(name="idIngrediente")
+	private Ingrediente ingrediente;
+
+	public long getIdRecetaIng() {
+		return idRecetaIng;
+	}
+
+	public void setIdRecetaIng(long idRecetaIng) {
+		this.idRecetaIng = idRecetaIng;
+	}
+
+	public Receta getReceta() {
+		return receta;
+	}
+
+	public void setReceta(Receta receta) {
+		this.receta = receta;
+	}
+
+	public Ingrediente getIngrediente() {
+		return ingrediente;
+	}
+
+	public void setIngrediente(Ingrediente ingrediente) {
+		this.ingrediente = ingrediente;
+	}
 
 }
