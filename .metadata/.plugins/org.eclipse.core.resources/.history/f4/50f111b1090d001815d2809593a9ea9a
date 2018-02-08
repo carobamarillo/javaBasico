@@ -9,5 +9,5 @@ public class Autor {
 	
 	@Id
 	@GeneratedValue
-	private long idAutor;
+	
 }
