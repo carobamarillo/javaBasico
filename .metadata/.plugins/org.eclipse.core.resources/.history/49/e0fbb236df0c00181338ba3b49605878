@@ -67,7 +67,7 @@ public class MainController {
 		return "agregar";
 	}
 	
-	@RequestMapping(value = "/agregar",
+	@RequestMapping(value = "/inscripcion",
 			method = RequestMethod.POST)
 	public String agregarIngredientesPost(Model model,
 			@RequestParam("idIngrediente") long idIngrediente,

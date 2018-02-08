@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Formu Piola</title>
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <form th:action="formulario" th:object="${alu}" method="post">
+    <label>Nombre</label>
+    <input type="text" th:field="*{nombre}" 
+    placeholder="Ingrese nombre"/>
+    <br/>
+    <label>Apellido</label>
+    <input type="text" th:field="*{apellido}"
+    placeholder="Ingrese apellido"/>
+    <br/>
+    <label>DNI</label>
+    <input type="number" th:field="*{dni}"/>
+    <br/>
+    <br/>
+    <input type="submit" value="Tuqui"/>
+    </form>
+  </body>
+</html>
