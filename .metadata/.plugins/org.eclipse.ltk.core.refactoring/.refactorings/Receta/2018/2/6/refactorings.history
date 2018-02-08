@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Receta/src/main/resources/templates/formulario&apos; to &apos;formulario.html&apos;" description="Rename resource &apos;formulario&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/formulario" name="formulario.html" stamp="1518100875348" updateReferences="true"/>
+</session>
