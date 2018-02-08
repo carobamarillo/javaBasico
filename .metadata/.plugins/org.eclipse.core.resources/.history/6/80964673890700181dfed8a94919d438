@@ -1,7 +1,0 @@
-package com.ejercicio19;
-
-public class Condicionales {
-	
-	public static int numero1,numero2;
-
-}
