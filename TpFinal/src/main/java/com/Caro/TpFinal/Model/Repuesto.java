@@ -2,10 +2,12 @@ package com.Caro.TpFinal.Model;
 
 import java.util.List;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+@Entity
 public class Repuesto {
 	@Id
 	@GeneratedValue

@@ -2,17 +2,19 @@ package com.Caro.TpFinal.Model;
 
 import java.util.List;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+@Entity
 public class Empleado {
 	
 		@Id
 		@GeneratedValue
 		private long idEmpleado;
 		private String nombreEmpleado, apellidoEmpleado;
-		private int dniEmpleado;
+		private int contraseña;
 		
 		@OneToMany(mappedBy = "empleado")
 		private List<OrdenDeTrabajo> listaOrdenDeTrabajo;
@@ -41,20 +43,20 @@ public class Empleado {
 			this.apellidoEmpleado = apellidoEmpleado;
 		}
 
-		public int getDniEmpleado() {
-			return dniEmpleado;
-		}
-
-		public void setDniEmpleado(int dniEmpleado) {
-			this.dniEmpleado = dniEmpleado;
-		}
-
 		public List<OrdenDeTrabajo> getListaOrdenDeTrabajo() {
 			return listaOrdenDeTrabajo;
 		}
 
 		public void setListaOrdenDeTrabajo(List<OrdenDeTrabajo> listaOrdenDeTrabajo) {
 			this.listaOrdenDeTrabajo = listaOrdenDeTrabajo;
+		}
+
+		public int getContraseña() {
+			return contraseña;
+		}
+
+		public void setContraseña(int contraseña) {
+			this.contraseña = contraseña;
 		}
 		
 }

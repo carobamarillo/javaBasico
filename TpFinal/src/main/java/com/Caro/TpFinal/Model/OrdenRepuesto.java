@@ -1,11 +1,14 @@
 package com.Caro.TpFinal.Model;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.websocket.OnOpen;
 
+
+@Entity
 public class OrdenRepuesto {
 	
 	@Id
@@ -15,7 +18,7 @@ public class OrdenRepuesto {
 	
 	@ManyToOne
 	@JoinColumn(name = "idOrden")
-	private OnOpen orden;
+	private OnOpen ordenDeTrabajo;
 	
 	@ManyToOne
 	@JoinColumn(name = "idRepuesto")
@@ -38,11 +41,11 @@ public class OrdenRepuesto {
 	}
 
 	public OnOpen getOrden() {
-		return orden;
+		return ordenDeTrabajo;
 	}
 
 	public void setOrden(OnOpen orden) {
-		this.orden = orden;
+		this.ordenDeTrabajo = orden;
 	}
 
 	public Repuesto getRepuesto() {
