@@ -29,12 +29,12 @@ public class OrdenDeTrabajo {
 	@OneToMany(mappedBy = "orden")
 	private List<OrdenRepuesto> ordenRepuestosO;
 	
-	public long getIdOrdenDeTrabajo() {
-		return idOrdenDeTrabajo;
-	}
-	public void setIdOrdenDeTrabajo(long idOrdenDeTrabajo) {
-		this.idOrdenDeTrabajo = idOrdenDeTrabajo;
-	}
+//	public long getIdOrden() {
+//		return idOrden;
+//	}
+//	public void setIdOrden(long idOrden) {
+//		this.idOrden = idOrden;
+//	}
 	public String getPatente() {
 		return patente;
 	}
