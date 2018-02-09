@@ -1,5 +1,7 @@
 package com.Caro.TpFinal.Model;
 
-public interface daoPropietario {
+import org.springframework.data.repository.CrudRepository;
 
+public interface daoPropietario extends CrudRepository<Propietario, Long>{
+ 
 }

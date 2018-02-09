@@ -1,0 +1,12 @@
+package com.Caro.TpFinal.Model;
+
+public class Empleado {		
+		@Id
+		@GeneratedValue
+		private long idEmpleado;
+		private String nombreEmpleado, apellidoEmpleado;
+		private int dniEmpleado;
+		
+		@OneToMany(mappedBy = "empleado")
+		private List<Orden> listaOrdenEmpleado;
+}

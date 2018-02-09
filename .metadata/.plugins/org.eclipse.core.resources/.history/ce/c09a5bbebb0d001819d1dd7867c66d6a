@@ -1,0 +1,13 @@
+package com.Caro.TpFinal.Model;
+
+public class Repuesto {
+	@Id
+	@GeneratedValue
+	private long idRepuesto;
+	private String nombreRepuesto;
+	private float costoRepuesto;
+	
+	@OneToMany(mappedBy = "repuesto")
+	private List<OrdenRepuesto> listaOrdenRepuestosR;
+	
+}
