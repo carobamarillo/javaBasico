@@ -1,0 +1,5 @@
+package com.Caro.TpFinal.Controller;
+
+public interface DaoEmpleado {
+
+}
