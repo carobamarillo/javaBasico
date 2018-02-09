@@ -24,7 +24,7 @@ public class Libro {
 	
 	@OneToMany(mappedBy = "libro",
 	fetch = FetchType.EAGER)
-	private List<LibroAutor> listaLibroAutor;
+	private List<LibroGenero> listaGenero;
 
 	public long getIdLibro() {
 		return idLibro;
@@ -42,20 +42,20 @@ public class Libro {
 		this.nombreLibro = nombreLibro;
 	}
 
-	public List<LibroAutor> getListaLibroAutor() {
-		return listaLibroAutor;
-	}
-
-	public void setListaLibroAutor(List<LibroAutor> listaLibroAutor) {
-		this.listaLibroAutor = listaLibroAutor;
-	}
-
 	public ArrayList<Long> getListaIdsGenero() {
 		return listaIdsGenero;
 	}
 
 	public void setListaIdsGenero(ArrayList<Long> listaIdsGenero) {
 		this.listaIdsGenero = listaIdsGenero;
+	}
+
+	public List<LibroGenero> getListaGenero() {
+		return listaGenero;
+	}
+
+	public void setListaGenero(List<LibroGenero> listaGenero) {
+		this.listaGenero = listaGenero;
 	}	
 	
 }
