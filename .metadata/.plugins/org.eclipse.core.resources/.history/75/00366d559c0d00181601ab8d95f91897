@@ -1,0 +1,9 @@
+package com.Tp.MVC.Controller;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.Tp.MVC.Model.Genero;
+
+public interface DaoGenero extends CrudRepository<Genero, Long>{
+
+}

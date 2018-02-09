@@ -1,0 +1,5 @@
+package com.Tp.MVC.Controller;
+
+public interface DaoGenero {
+
+}
