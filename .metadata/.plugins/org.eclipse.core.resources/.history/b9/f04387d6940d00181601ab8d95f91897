@@ -1,0 +1,6 @@
+package com.Tp.MVC.Model;
+
+public interface daoLibroGenero extends CrudRepository<LibroGenero,Long>{
+	
+
+}
