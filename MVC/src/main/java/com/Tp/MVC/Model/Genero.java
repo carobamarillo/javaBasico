@@ -22,7 +22,6 @@ public class Genero {
 	private List<LibroGenero> listaLibroGenero;
 	
 	
-
 	public long getIdGenero() {
 		return idGenero;
 	}
