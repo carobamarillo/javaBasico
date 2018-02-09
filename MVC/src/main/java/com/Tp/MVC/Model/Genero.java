@@ -1,11 +1,12 @@
 package com.Tp.MVC.Model;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.OneToMany;
 
 @Entity
 public class Genero {
@@ -16,8 +17,11 @@ public class Genero {
 	
 	private String genero;
 	
-	@Transient
-	private ArrayList<Long> listaIdsGenero;
+	@OneToMany(mappedBy = "genero",
+			fetch = FetchType.EAGER)
+	private List<LibroGenero> listaLibroGenero;
+	
+	
 
 	public long getIdGenero() {
 		return idGenero;
@@ -34,15 +38,5 @@ public class Genero {
 	public void setGenero(String genero) {
 		this.genero = genero;
 	}
-
-	public ArrayList<Long> getListaIdsGenero() {
-		return listaIdsGenero;
-	}
-
-	public void setListaIdsGenero(ArrayList<Long> listaIdsGenero) {
-		this.listaIdsGenero = listaIdsGenero;
-	}
-	
-	
 	
 }
