@@ -16,7 +16,7 @@ public class OrdenDeTrabajo {
 	@GeneratedValue
 	private long idOrdenDeTrabajo;
 	private String patente, detalle, marca, fecha;
-	private int cantHorasManoDeObra, total;
+	private int cantHorasManoDeObra,total;
 	
 	@ManyToOne
 	@JoinColumn(name = "idEmpleado")

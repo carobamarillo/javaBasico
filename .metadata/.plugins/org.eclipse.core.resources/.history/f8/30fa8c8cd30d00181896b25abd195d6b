@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Index</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous"></link>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no"></meta>
+</head>
+<body>
+	<form th:action="crearOrdenTrabajo" th:object="${ordenDeTrabajo}" method="post">
+		
+			<label >Ingrese nro patente </label> <input
+				type="text" style="margin-left: 1em" 
+				th:field="*{patente}" placeholder="Ingrese nombre" />
+	</form>
+</body>
+</html>

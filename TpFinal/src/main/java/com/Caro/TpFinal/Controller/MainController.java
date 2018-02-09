@@ -17,9 +17,8 @@ import com.Caro.TpFinal.Model.OrdenDeTrabajo;
 import com.Caro.TpFinal.Model.OrdenRepuesto;
 
 @Controller
-@SuppressWarnings("unused")
 public class MainController {
-
+	
 	
 	@Autowired
 	private DaoEmpleado daoEmpleado;
@@ -52,7 +51,7 @@ public class MainController {
 		return modelAndView;
 	}
 	
-	@RequestMapping(value = "/crearOrdenDeTrabajo", method = RequestMethod.POST)
+	@RequestMapping(value = "/agregarRepuesto", method = RequestMethod.GET)
 	public ModelAndView crearOrdenPost(@ModelAttribute OrdenDeTrabajo ordenDeTrabajo){
 		
 		ModelAndView modelAndView = new ModelAndView();
