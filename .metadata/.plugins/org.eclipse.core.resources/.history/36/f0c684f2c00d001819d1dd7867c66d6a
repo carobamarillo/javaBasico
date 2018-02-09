@@ -52,7 +52,7 @@ public class MainController {
 		return modelAndView;
 	}
 	
-	@RequestMapping(value = "/crearOrdenDeTrabajo", method = RequestMethod.POST)
+	@RequestMapping(value = "/crearOrden", method = RequestMethod.POST)
 	public ModelAndView crearOrdenPost(@ModelAttribute OrdenDeTrabajo ordenDeTrabajo){
 		
 		ModelAndView modelAndView = new ModelAndView();
