@@ -26,8 +26,8 @@ public class OrdenDeTrabajo {
 	@JoinColumn(name = "idPropieatrio")
 	private Propietario propietario;
 	
-	@OneToMany(mappedBy = "orden")
-	private List<OrdenRepuesto> ordenRepuestosO;
+	@OneToMany(mappedBy = "ordenDeTrabajo")
+	private List<OrdenRepuesto> listaOrdenRepuestosB;
 	
 	public long getIdOrdenDeTrabajo() {
 		return idOrdenDeTrabajo;
@@ -83,13 +83,4 @@ public class OrdenDeTrabajo {
 	public void setPropietario(Propietario propietario) {
 		this.propietario = propietario;
 	}
-	public List<OrdenRepuesto> getOrdenRepuestosO() {
-		return ordenRepuestosO;
-	}
-	public void setOrdenRepuestosO(List<OrdenRepuesto> ordenRepuestosO) {
-		this.ordenRepuestosO = ordenRepuestosO;
-	}
-	
-	
-	
 }

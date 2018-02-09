@@ -17,8 +17,8 @@ public class OrdenRepuesto {
 	private int cantidadRepuestos;
 	
 	@ManyToOne
-	@JoinColumn(name = "idOrden")
-	private OnOpen ordenDeTrabajo;
+	@JoinColumn(name = "idOrdenDeTrabajo")
+	private OrdenDeTrabajo ordenDeTrabajo;
 	
 	@ManyToOne
 	@JoinColumn(name = "idRepuesto")
@@ -39,21 +39,21 @@ public class OrdenRepuesto {
 	public void setCantidadRepuestos(int cantidadRepuestos) {
 		this.cantidadRepuestos = cantidadRepuestos;
 	}
-
-	public OnOpen getOrden() {
-		return ordenDeTrabajo;
-	}
-
-	public void setOrden(OnOpen orden) {
-		this.ordenDeTrabajo = orden;
-	}
-
+	
 	public Repuesto getRepuesto() {
 		return repuesto;
 	}
 
 	public void setRepuesto(Repuesto repuesto) {
 		this.repuesto = repuesto;
+	}
+
+	public OrdenDeTrabajo getOrdenDeTrabajo() {
+		return ordenDeTrabajo;
+	}
+
+	public void setOrdenDeTrabajo(OrdenDeTrabajo ordenDeTrabajo) {
+		this.ordenDeTrabajo = ordenDeTrabajo;
 	}
 	
 	

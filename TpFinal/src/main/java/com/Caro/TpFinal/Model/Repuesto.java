@@ -16,7 +16,7 @@ public class Repuesto {
 	private float costoRepuesto;
 	
 	@OneToMany(mappedBy = "repuesto")
-	private List<OrdenRepuesto> listaOrdenRepuestosR;
+	private List<OrdenRepuesto> listaOrdenRepuestosA;
 
 	public long getIdRepuesto() {
 		return idRepuesto;
@@ -42,13 +42,12 @@ public class Repuesto {
 		this.costoRepuesto = costoRepuesto;
 	}
 
-	public List<OrdenRepuesto> getListaOrdenRepuestosR() {
-		return listaOrdenRepuestosR;
+	public List<OrdenRepuesto> getListaOrdenRepuestosA() {
+		return listaOrdenRepuestosA;
 	}
 
-	public void setListaOrdenRepuestosR(List<OrdenRepuesto> listaOrdenRepuestosR) {
-		this.listaOrdenRepuestosR = listaOrdenRepuestosR;
+	public void setListaOrdenRepuestosA(List<OrdenRepuesto> listaOrdenRepuestosA) {
+		this.listaOrdenRepuestosA = listaOrdenRepuestosA;
 	}
-	
 	
 }
