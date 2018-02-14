@@ -15,6 +15,9 @@
     		<form action = "filtrarOrdenes" method = "post">
     			<label><a th:href = "@{cerrarSesion}">Cerrar Sesion</a></label>
     			<br></br>
+    			<label>Buscar</label>
+    			<input type = "text" th:field = "${propietarioBusqueda.apellido}" placeholder = "Apellido propietario"/>
+    			<input type = "submit" value = "Buscar"/>
     		</form>
     	</div>
     </div>

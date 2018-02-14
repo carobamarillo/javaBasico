@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlsn:th = "http://www.thymeleaf.org">
   <head>
-    <title>Tp</title>
+    <title>Sistema Mecanico</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   </head>
   <body>
-    <h1 align = "center">Lista</h1>
+    <h1 align = "center">Pagina principal</h1>
     <div class = "row">
     	<div class = "col-md-8">
     		<h4><a th:href = "@{formularioOrden}">Crear Nueva Orden de Trabajo</a></h4>
@@ -15,6 +15,9 @@
     		<form action = "filtrarOrdenes" method = "post">
     			<label><a th:href = "@{cerrarSesion}">Cerrar Sesion</a></label>
     			<br></br>
+    			<label>Buscar</label>
+    			<input type = "text" th:field = "${propietarioBusqueda.apellido}" placeholder = "Apellido propietario"/>
+    			<input type = "submit" value = "Buscar"/>
     		</form>
     	</div>
     </div>

@@ -62,7 +62,7 @@
     <a th:href = "@{cerrarOrden(idOrdenDeTrabajo = ${ordenDeTrabajo.getIdOrdenDeTrabajo()})}"
     	th:unless = "${ordenDeTrabajo.isCerrada()}">Cerrar orden</a>
     <br></br>
-    <a th:href = "@{/paginaPrincipal}">Lista</a>
+    <a th:href = "@{/paginaPrincipal}">/media/alumno/CARO/demoCaro</a>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>

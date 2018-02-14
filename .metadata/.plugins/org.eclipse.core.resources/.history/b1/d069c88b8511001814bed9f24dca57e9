@@ -6,7 +6,14 @@
   </head>
   <body>
     <form action = "nuevaOrden" method = "post" class = "form-group">
-    	 <input type = "hidden" th:field = "${ordenDeTrabajo.propietario}"/>
+    	<label>Propietario</label>
+    	<select th:field = "${ordenDeTrabajo.propietario}">
+   	  		<option th:each = "propietario : ${propietarios}" 
+   	  			th:value = "${propietario.getIdPropietario()}" 
+   	  				th:text = "${propietario.getNombre()} + ' ' + ${propietario.getApellido()}">
+	   		</option>
+		 </select>
+		 <a th:href = "@{formularioPropietario}"><label>Crear nuevo propietario</label></a>
 		 <br></br>
 		 <label>Numero de Patente</label>
 		 <input type="number" th:field = "${ordenDeTrabajo.nroDePatente}" />
@@ -23,22 +30,14 @@
 		 <label>Fecha de ingreso</label>
 		 <input type="text" th:field = "${ordenDeTrabajo.fecha}" />
 		 <br></br>
-		 <!-- <label>Empleado</label>
-    	<select th:field = "${ordenDeTrabajo.empleado}">
-   	  		<option th:each = "empleado : ${empleados}" 
-   	  			th:value = "${empleado.getIdEmpleado()}" 
-   	  				th:text = "${empleado.getNombre()} + ' ' + ${empleado.getApellido()}">
-	   		</option>
-		 </select> -->
 		 <input type = "hidden" th:field = "${ordenDeTrabajo.empleado}"/>
 		 <input type = "hidden" th:field = "${usuario.usuario}"/>
 		 <input type = "hidden" th:field = "${usuario.contrasenia}"/>
 		 <input type = "hidden" th:field = "${usuario.empleado}"/>
-	  	<br></br>
 		<input type="submit" value="Enviar" />
     </form>
     <br></br>
-    <a th:href = "@{/paginaPrincipal}">Lista</a>
+    <a th:href = "@{/paginaPrincipal}">Pagina Principal</a>
     <br></br>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>

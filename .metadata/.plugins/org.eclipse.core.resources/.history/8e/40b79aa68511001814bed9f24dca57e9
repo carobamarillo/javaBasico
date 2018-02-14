@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlsn:th = "http://www.thymeleaf.org">
   <head>
-    <title>Tp</title>
+    <title>Sistema Mecanico</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   </head>
   <body>
@@ -15,6 +15,9 @@
     		<form action = "filtrarOrdenes" method = "post">
     			<label><a th:href = "@{cerrarSesion}">Cerrar Sesion</a></label>
     			<br></br>
+    			<label>Buscar</label>
+    			<input type = "text" th:field = "${propietarioBusqueda.apellido}" placeholder = "Apellido propietario"/>
+    			<input type = "submit" value = "Buscar"/>
     		</form>
     	</div>
     </div>
