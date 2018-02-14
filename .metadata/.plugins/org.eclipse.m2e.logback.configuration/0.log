@@ -7561,3 +7561,24 @@ org.eclipse.core.runtime.CoreException: Launch configuration TpFinalApplication 
 2018-02-14 09:14:33,555 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
 2018-02-14 09:14:33,563 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-02-14 09:14:33,563 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/demoCaro/src/test/resources
+2018-02-14 09:22:37,676 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.TpFinal:demoCaro:0.0.1-SNAPSHOT @ /home/alumno/Caro/demoCaroTp/pom.xml.
+2018-02-14 09:22:38,850 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demoCaroTp/src/main/java
+2018-02-14 09:22:38,850 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demoCaroTp/src/main/resources
+2018-02-14 09:22:38,852 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /demoCaroTp/src/main/resources
+2018-02-14 09:22:38,854 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /demoCaroTp/src/test/java
+2018-02-14 09:22:39,168 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2018-02-14 09:22:41,322 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-14 09:22:41,323 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-14 09:22:41,355 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2018-02-14 09:22:41,366 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-14 09:22:41,366 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/demoCaroTp/src/test/resources
+2018-02-14 09:22:54,122 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-14 09:22:54,127 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-14 09:22:54,133 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2018-02-14 09:22:54,137 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-14 09:22:54,137 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/demoCaroTp/src/test/resources
+2018-02-14 09:25:19,046 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-14 09:25:19,047 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-02-14 09:25:19,053 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2018-02-14 09:25:19,057 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-02-14 09:25:19,057 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/alumno/Caro/demoCaroTp/src/test/resources
