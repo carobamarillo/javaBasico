@@ -3727,3 +3727,6 @@ java.net.UnknownHostException: dev.eclipse.org: Name or service not known
 
 !ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2018-02-14 09:46:34.588
 !MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY unknown 4 0 2018-02-14 09:57:55.381
+!MESSAGE Execution of 'dbus-send --print-reply --dest=org.freedesktop.FileManager1 /org/freedesktop/FileManager1 org.freedesktop.FileManager1.ShowItems array:string:"file:/home/alumno/Caro/demoCaro/" string:""' failed with return code: 1

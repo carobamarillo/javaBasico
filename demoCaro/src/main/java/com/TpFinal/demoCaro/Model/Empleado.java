@@ -16,6 +16,7 @@ public class Empleado {
 	private long idEmpleado;
 	
 	private String nombre,apellido;
+	private int dni;
 	
 	@OneToMany(mappedBy = "empleado")
 	private List<OrdenDeTrabajo> listaDeOrdenDetrabajo;
@@ -61,6 +62,14 @@ public class Empleado {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public int getDni() {
+		return dni;
+	}
+
+	public void setDni(int dni) {
+		this.dni = dni;
 	}
 	
 	
