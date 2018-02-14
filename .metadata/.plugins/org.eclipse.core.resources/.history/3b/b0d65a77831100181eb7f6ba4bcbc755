@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlsn:th = "http://www.thymeleaf.org">
+  <head>
+    <title>Nueva Orden de Trabajo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <form action = "nuevaOrden" method = "post" class = "form-group">
+    	 <input type = "hidden" th:field = "${ordenDeTrabajo.propietario}"/>
+		 <br></br>
+		 <label>Numero de Patente</label>
+		 <input type="number" th:field = "${ordenDeTrabajo.nroDePatente}" />
+		 <br></br>
+		 <label>Horas de mano de obra</label>
+		 <input type="number" th:field = "${ordenDeTrabajo.horasDeManoDeObra}" />
+		 <br></br>
+		 <label>Marca</label>
+		 <input type="text" th:field = "${ordenDeTrabajo.marca}" />
+		 <br></br>
+		 <label>Detalle</label>
+		 <input type="text" th:field = "${ordenDeTrabajo.detalle}" />
+		 <br></br>
+		 <label>Fecha de ingreso</label>
+		 <input type="text" th:field = "${ordenDeTrabajo.fecha}" />
+		 <br></br>
+		 <!-- <label>Empleado</label>
+    	<select th:field = "${ordenDeTrabajo.empleado}">
+   	  		<option th:each = "empleado : ${empleados}" 
+   	  			th:value = "${empleado.getIdEmpleado()}" 
+   	  				th:text = "${empleado.getNombre()} + ' ' + ${empleado.getApellido()}">
+	   		</option>
+		 </select> -->
+		 <input type = "hidden" th:field = "${ordenDeTrabajo.empleado}"/>
+		 <input type = "hidden" th:field = "${usuario.usuario}"/>
+		 <input type = "hidden" th:field = "${usuario.contrasenia}"/>
+		 <input type = "hidden" th:field = "${usuario.empleado}"/>
+	  	<br></br>
+		<input type="submit" value="Enviar" />
+    </form>
+    <br></br>
+    <a th:href = "@{/paginaPrincipal}">Pagina Principal</a>
+    <br></br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

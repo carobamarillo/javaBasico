@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlsn:th = "http://www.thymeleaf.org">
+  <head>
+    <title>Logino</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  </head>
+  <body>
+  	<h1>Login</h1>
+    <form action = "login" method = "post" class = "form-group" th:object = "${usuario}">
+    	<label>Usuario</label>
+    	<input type = "text" th:field = "*{usuario}"/>
+    	<br></br>
+    	<label>Contraseña</label>
+    	<input type = "password" th:field = "*{contrasenia}"/>
+    	<br></br>
+		<input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

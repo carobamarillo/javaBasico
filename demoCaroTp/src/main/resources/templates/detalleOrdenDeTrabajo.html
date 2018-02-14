@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlsn:th = "http://www.thymeleaf.org">
   <head>
-    <title>Sistema Mecanico</title>
+    <title>Tp Final</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   </head>
   <body>
     <h1 align = "center" th:text = "'Orden de Trabajo nro ' + ${ordenDeTrabajo.getIdOrdenDeTrabajo()}"></h1>
-    <h2>Datos Orden</h2>
+    <h2>Orden</h2>
     <label th:text = "'Fecha: ' + ${ordenDeTrabajo.getFecha()}"></label>
     <br></br>
     <label th:text = "'Marca: ' + ${ordenDeTrabajo.getMarca()}"></label>
@@ -17,7 +17,7 @@
     <br></br>
     <label th:text = "'Estado: ' + ${ordenDeTrabajo.getEstado()}"></label>
     <hr></hr>
-    <h2>Datos Propietario</h2>
+    <h2>Propietario</h2>
     <label th:text = "'Nombre y Apellido: ' + ${ordenDeTrabajo.getPropietario().getNombre()} + ' '
     	 + ${ordenDeTrabajo.getPropietario().getApellido()}"></label>
     <br></br>

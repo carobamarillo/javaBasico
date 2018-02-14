@@ -23,13 +23,6 @@
 		 <label>Fecha de ingreso</label>
 		 <input type="text" th:field = "${ordenDeTrabajo.fecha}" />
 		 <br></br>
-		 <!-- <label>Empleado</label>
-    	<select th:field = "${ordenDeTrabajo.empleado}">
-   	  		<option th:each = "empleado : ${empleados}" 
-   	  			th:value = "${empleado.getIdEmpleado()}" 
-   	  				th:text = "${empleado.getNombre()} + ' ' + ${empleado.getApellido()}">
-	   		</option>
-		 </select> -->
 		 <input type = "hidden" th:field = "${ordenDeTrabajo.empleado}"/>
 		 <input type = "hidden" th:field = "${usuario.usuario}"/>
 		 <input type = "hidden" th:field = "${usuario.contrasenia}"/>
@@ -38,7 +31,7 @@
 		<input type="submit" value="Enviar" />
     </form>
     <br></br>
-    <a th:href = "@{/paginaPrincipal}">Pagina Principal</a>
+    <a th:href = "@{/paginaPrincipal}">Lista</a>
     <br></br>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
