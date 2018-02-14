@@ -1,9 +1,0 @@
-package com.Caro.TpFinal.Model;
-
-import org.springframework.data.repository.CrudRepository;
-
-import com.Caro.TpFinal.Controller.OrdenRepuesto;
-
-public interface DaoOrdenRepuesto extends CrudRepository<OrdenRepuesto, Long> {
-
-}

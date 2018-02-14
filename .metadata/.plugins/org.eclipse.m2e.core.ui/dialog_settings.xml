@@ -14,6 +14,8 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/alumno/Caro/demoCaroTp"/>
+			<item value="/home/alumno/Caro/demoCaro"/>
 			<item value="/home/alumno/Caro/TpFinal"/>
 			<item value="/home/alumno/Caro/MVC"/>
 			<item value="/home/alumno/Desktop/DemoManyToMany"/>
