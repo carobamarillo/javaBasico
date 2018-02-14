@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlsn:th = "http://www.thymeleaf.org">
+  <head>
+    <title>Nueva Orden de Trabajo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <form action = "nuevoPropietario" method = "post" class = "form-group">
+		 <br></br>
+		 <label>Nombre</label>
+		 <input type="text" th:field = "${propietario.nombre}" />
+		 <br></br>
+		 <label>Apellido</label>
+		 <input type="text" th:field = "${propietario.apellido}" />
+		 <br></br>
+		 <label>DNI</label>
+		 <input type="number" th:field = "${propietario.dni}" />
+		 <br></br>
+		 <label>Direccion</label>
+		 <input type="text" th:field = "${propietario.direccion}" />
+		 <br></br>
+		 <label>Telefono</label>
+		 <input type="text" th:field = "${propietario.telefono}" />
+		 <br></br>
+	  	<br></br>
+		<input type="submit" value="Enviar" />
+    </form>
+    <br></br>
+    <a th:href = "@{/paginaPrincipal}">Pagina Principal</a>
+    <br></br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

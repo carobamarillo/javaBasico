@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlsn:th = "http://www.thymeleaf.org">
+  <head>
+    <title>Nueva Orden de Trabajo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <form action = "agregarRepuesto" th:object = "${ordenRepuesto}" method = "post" class = "form-group">
+    	<label>Repuesto</label>
+    	<select th:field = "*{repuesto}">
+   	  		<option th:each = "repuesto : ${repuestos}" 
+   	  			th:value = "${repuesto.getIdRepuesto()}" 
+   	  				th:text = "${repuesto.getDescripcion()}">
+	   		</option>
+		 </select>
+		 <br></br>
+		 <input type = "hidden" th:field = "*{ordenDeTrabajo}"/>
+		 <label>Cantidad</label>
+		 <input type="number" th:field = "*{cantidad}" />
+	  	<br></br>
+		<input type="submit" value="Enviar" />
+    </form>
+    <a th:href = "@{/paginaPrincipal}">Pagina Principal</a>
+    <br></br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
